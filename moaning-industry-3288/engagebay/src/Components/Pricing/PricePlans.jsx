@@ -20,7 +20,7 @@ function PriceWrapper({ children }: { children: ReactNode }) {
     <Box
       mb={4}
       shadow="base"
-      borderWidth="1px"
+      w="90%"
       alignSelf={{ base: "center", lg: "flex-start" }}
       borderColor={useColorModeValue("gray.200", "gray.500")}
       borderRadius={"xl"}
@@ -46,7 +46,7 @@ const priceData = [
   },
   {
     title: "Free",
-    price: "0",
+    price: "12.99",
     n1: "250 Contacts & Companies",
     n2: "Contact Management",
     n3: "360 Degree Contact View",
@@ -59,7 +59,7 @@ const priceData = [
   },
   {
     title: "Free",
-    price: "0",
+    price: "49.99",
     n1: "250 Contacts & Companies",
     n2: "Contact Management",
     n3: "360 Degree Contact View",
@@ -72,7 +72,7 @@ const priceData = [
   },
   {
     title: "Free",
-    price: "0",
+    price: "79.99",
     n1: "250 Contacts & Companies",
     n2: "Contact Management",
     n3: "360 Degree Contact View",
@@ -87,10 +87,10 @@ const priceData = [
 
 const PricePlans = () => {
   return (
-    <Box py={12} id="month">
-      <Stack
+    <Box py={12} id="month" w="80%" m="auto">
+      <Stack 
         direction={{ base: "column", md: "row" }}
-        textAlign="center" w="90%" m="auto"
+        textAlign="center" w="25%" m="auto"
         justify="center"
         spacing={{ base: 4, lg: 10 }}
         py={10}
@@ -110,7 +110,7 @@ const PricePlans = () => {
                   <Text fontSize="3xl" fontWeight="600">
                     $
                   </Text>
-                  <Text fontSize="5xl" fontWeight="600">
+                  <Text fontSize="3xl" fontWeight="600">
                     {ele.price}
                   </Text>
                   <Text fontSize="3xl" color="gray.500">

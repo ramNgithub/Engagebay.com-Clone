@@ -2,14 +2,19 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
 import Plan from "./Components/Pricing/Plans/Month";
 import PricePlans from "./Components/Pricing/PricePlans";
+import { BrowserRouter } from "react-router-dom";
+import AllRoutes from "./Components/Pricing/Routes/AllRoutes";
 
 function App() {
   return (
     <div className="App">
-      <ChakraProvider>
-        <Plan />
-        {/* <PricePlans/> */}
-      </ChakraProvider>
+      <BrowserRouter>
+        <ChakraProvider>
+          <Plan />
+          <AllRoutes/>
+          {/* <PricePlans/> */}
+        </ChakraProvider>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Tabs,
   TabList,
@@ -6,17 +5,12 @@ import {
   TabPanels,
   TabPanel,
   Flex,
-} from "@chakra-ui/react";
-import { ReactNode } from "react";
-import {
   Box,
-  Stack,
-  HStack,
   Heading,
   Text,
   VStack,
-  useColorModeValue,
 } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 const Month = () => {
   return (
@@ -108,22 +102,33 @@ const Month = () => {
         m="auto"
         borderRadius="25px"
         mt="5.7%"
-        h="6vh"
+        h="6.2vh"
       >
         <Tabs variant="soft-rounded" colorScheme="green" color="red" w="100%">
           <TabList>
-            <Tab m="left" w="33%" color="white">
-              <a href="#month">
-              Monthly
-              </a>
-            </Tab>
-            <Tab m="auto" w="33%" color="white">
-              <a href="#Year"></a>
-              Yearly (8% off)
-            </Tab>
-            <Tab m="right" w="33%" color="white">
-              Biennial (15% off)
-            </Tab>
+          <Box m="left" w="33%">
+            <NavLink to="/" m="auto">
+              <Tab m="auto" w="100%" color="white">
+                Monthly
+              </Tab>
+            </NavLink>
+            </Box>
+
+            <Box m="auto" w="33%">
+            <NavLink to="/year" m="auto">
+              <Tab m="auto" color="white" w="100%">
+                Yearly (8% off)
+              </Tab>
+            </NavLink>
+            </Box>
+
+            <Box m="right" w="33%">
+            <NavLink to="/year" m="auto">
+              <Tab m="right" color="white" w="100%">
+                Biennial (15% off)
+              </Tab>
+            </NavLink>
+            </Box>
           </TabList>
           {/* <TabPanels >
             <TabPanel>
