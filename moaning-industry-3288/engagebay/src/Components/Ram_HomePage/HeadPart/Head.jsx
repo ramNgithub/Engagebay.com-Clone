@@ -8,9 +8,8 @@ const Head = () => {
         <h1 >Market better. Sell faster.
         <br/>
         Support smarter</h1>
+
         
-
-
         <p >One platform for all your Marketing, Sales, and Support teams</p>
 </div>
 <div className='TopInputNButton'>

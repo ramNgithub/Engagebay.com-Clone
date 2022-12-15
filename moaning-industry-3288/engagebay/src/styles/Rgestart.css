@@ -1,0 +1,91 @@
+.started{
+    border: 0px solid green;
+    height: 400px;
+    display: flex;
+    gap: 70px;
+   justify-content: center;
+   width: 79%;
+   margin-left: 150px;
+   padding: 10px;
+   margin-bottom: 90px;
+   
+}
+.onestarted{
+    border: 0px solid red;
+    width: 72%;
+    height: 100%;
+}
+.twostarted{
+    border: 0px solid yellow;
+    width: 35%;
+    height: 100%;
+    background-color: rgb(245, 241, 241);
+}
+.ub{
+    border: 0px solid red;
+    display: flex;
+    gap: 10px;
+}
+.blu{
+    color: rgb(100, 51, 163);
+}
+.unli{
+    color: rgb(94, 86, 86);
+    font-weight: 450;
+    
+}
+.onestarted>p{
+    font-size: large;
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+}
+.tick{
+    border: 0px solid blue;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 19px;
+    padding: 10px;
+}
+.sis>img{
+    width: 120px;
+    border: 0px solid red;
+    padding: 2px;
+
+}
+.thh{
+    height:110px ;
+}
+.twostarted{
+    text-align: center;
+}
+.inp>input{
+    height: 35px;
+    width: 70%;
+    font-size: large;
+    color: rgb(155, 146, 146);
+    padding-left: 20px;
+    border: 0.3px solid rgb(165, 164, 164);
+    margin-bottom: 15px; 
+}
+.org{
+    background-color: orangered;
+    
+
+    
+}
+.org::placeholder{
+    color: white;
+}
+.last::placeholder{
+ color: rgb(95, 7, 129);
+
+
+}
+.last:hover{
+    background-color:rgb(95, 7, 129); 
+    
+}
+.last:hover::placeholder{
+    color: white;
+}
