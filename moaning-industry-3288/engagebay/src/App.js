@@ -7,6 +7,9 @@ function App() {
     <div className="App">
       <Head/>
       <MiddleUper/>
+
+
+      
     </div>
   );
 }
