@@ -13,6 +13,8 @@ import React from 'react'
 const App = () => {
   return (
     <div className="App">
+      <Head/>
+      <MiddleUper/>
 
       <BrowserRouter>
         <ChakraProvider>
@@ -21,13 +23,16 @@ const App = () => {
         </ChakraProvider>
       </BrowserRouter>
 
-      <Head/>
-      <MiddleUper/>
-      
      <Resource/>
      <AutoDailer/>
-   </div>
-  )
+</div>
+  );
+
+      
+     
+  
+  
+
 
 }
 
