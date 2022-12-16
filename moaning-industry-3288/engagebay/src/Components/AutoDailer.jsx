@@ -500,3 +500,4 @@ export const AutoDailer = () => {
     </div>
   );
 };
+// Add footer 
