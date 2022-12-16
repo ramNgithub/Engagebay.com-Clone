@@ -1,8 +1,10 @@
 
 
-// import Plan from "./Components/Pricing/Plans/Month";
-//import { BrowserRouter } from "react-router-dom";
 
+// import Plan from "./Components/Pricing/Plans/Month";
+
+
+//import { BrowserRouter } from "react-router-dom";
 import Resource from './Components/Resource.jsx'
 import Head from './Components/Ram_HomePage/HeadPart/Head';
 import MiddleCenter from './Components/Ram_HomePage/MiddlePart/MiddleCenter';
