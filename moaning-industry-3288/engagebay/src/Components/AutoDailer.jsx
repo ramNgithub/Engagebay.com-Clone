@@ -9,9 +9,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-
 import { GiCheckMark } from "react-icons/gi";
-
 let data = [
   {
     src: "https://cdn5.engagebay.com/img/powerful-Text-Editors.svg",
