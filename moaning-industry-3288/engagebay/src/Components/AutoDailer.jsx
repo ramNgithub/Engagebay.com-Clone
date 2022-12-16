@@ -9,6 +9,10 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
+
+
+
+
 import { GiCheckMark } from "react-icons/gi";
 let data = [
   {
