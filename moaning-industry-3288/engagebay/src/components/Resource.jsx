@@ -93,11 +93,6 @@ const Resource = () => {
             
             
           </div>
-
-
-
-
-
       </div>
       <Rgetstart/>
      

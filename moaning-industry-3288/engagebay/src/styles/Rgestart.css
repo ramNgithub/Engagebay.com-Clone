@@ -25,15 +25,19 @@
     border: 0px solid red;
     display: flex;
     gap: 10px;
+
+}
+
+.ub>h1{
+    font-weight: 400;
+    font-size:2.3rem;
+    
 }
 .blu{
     color: rgb(100, 51, 163);
 }
-.unli{
-    color: rgb(94, 86, 86);
-    font-weight: 450;
-    
-}
+
+
 .onestarted>p{
     font-size: large;
     font-weight: 600;
@@ -46,6 +50,12 @@
     font-weight: 500;
     font-size: 19px;
     padding: 10px;
+}
+.sis{
+    border: 0px solid green;
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
 }
 .sis>img{
     width: 120px;
@@ -87,5 +97,12 @@
     
 }
 .last:hover::placeholder{
-    color: white;
+    color: rgb(250, 245, 245);
+}
+.twostarted>h1{
+    color: rgb(156, 148, 148);
+    font-weight: 500;
+    font-size: 19px;
+    padding-top: 30px;
+    
 }
