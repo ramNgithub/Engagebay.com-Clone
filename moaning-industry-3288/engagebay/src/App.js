@@ -1,6 +1,6 @@
-
-// import Resource from './styles/Resource.jsx'
+import Resource from './styles/Resource.jsx'
 import Head from './Components/Ram_HomePage/HeadPart/Head';
+import MiddleCenter from './Components/Ram_HomePage/MiddlePart/MiddleCenter';
 import MiddleUper from './Components/Ram_HomePage/MiddlePart/MiddleUper';
 import { AutoDailer } from "./Components/AutoDailer";
 import React from 'react'
@@ -11,18 +11,12 @@ const App = () => {
     <div className="App">
       <Head/>
       <MiddleUper/>
+      <MiddleCenter/>
       <Om/>
-     {/* <Resource/> */}
-     <AutoDailer/>
-</div>
+      <Resource/>
+      <AutoDailer/>
+   </div>
+
   );
-
-      
-     
-  
-  
-
-
 }
-
 export default App
