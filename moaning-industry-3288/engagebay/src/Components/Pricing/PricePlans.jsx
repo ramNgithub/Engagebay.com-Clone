@@ -1,151 +1,128 @@
-import React from "react";
-import { ReactNode } from "react";
 import {
+  Tabs,
+  TabList,
+  Tab,
+  TabPanels,
+  TabPanel,
+  Flex,
   Box,
-  Stack,
-  HStack,
   Heading,
   Text,
   VStack,
-  useColorModeValue,
-  List,
-  ListItem,
-  ListIcon,
-  Button,
 } from "@chakra-ui/react";
-import { FaCheckCircle } from "react-icons/fa";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-function PriceWrapper({ children }: { children: ReactNode }) {
-  return (
-    <Box
-      mb={4}
-      shadow="base"
-      w="90%"
-      alignSelf={{ base: "center", lg: "flex-start" }}
-      borderColor={useColorModeValue("gray.200", "gray.500")}
-      borderRadius={"xl"}
-    >
-      {children}
-    </Box>
-  );
-}
-
-const priceData = [
-  {
-    title: "Free",
-    price: "0",
-    n1: "250 Contacts & Companies",
-    n2: "Contact Management",
-    n3: "360 Degree Contact View",
-    n4: "Deals",
-    n5: "Tasks",
-    n6: "Email Tracking",
-    n7: "Appointment Scheduling",
-    n8: "Gsuite Intergrstion",
-    n9: "Live Chat",
-  },
-  {
-    title: "Free",
-    price: "12.99",
-    n1: "250 Contacts & Companies",
-    n2: "Contact Management",
-    n3: "360 Degree Contact View",
-    n4: "Deals",
-    n5: "Tasks",
-    n6: "Email Tracking",
-    n7: "Appointment Scheduling",
-    n8: "Gsuite Intergrstion",
-    n9: "Live Chat",
-  },
-  {
-    title: "Free",
-    price: "49.99",
-    n1: "250 Contacts & Companies",
-    n2: "Contact Management",
-    n3: "360 Degree Contact View",
-    n4: "Deals",
-    n5: "Tasks",
-    n6: "Email Tracking",
-    n7: "Appointment Scheduling",
-    n8: "Gsuite Intergrstion",
-    n9: "Live Chat",
-  },
-  {
-    title: "Free",
-    price: "79.99",
-    n1: "250 Contacts & Companies",
-    n2: "Contact Management",
-    n3: "360 Degree Contact View",
-    n4: "Deals",
-    n5: "Tasks",
-    n6: "Email Tracking",
-    n7: "Appointment Scheduling",
-    n8: "Gsuite Intergrstion",
-    n9: "Live Chat",
-  },
+const pair4 = [
+  { title: "All-in-One", desc: "Starts at $12.74 USD", Route: "/" },
+  { title: "Marketing", desc: "Starts at $11.04 USD", Route: "/marketing" },
+  { title: "CRM & Sales Bay", desc: "Starts at $11.04 USD", Route: "/" },
+  { title: "Service Bay", desc: "Free Help Desk", Route: "/service" },
 ];
 
 const PricePlans = () => {
+
+  const [service, setService] = useState(false);
+
   return (
-    <Box py={12} id="month" w="80%" m="auto">
-      <Stack 
-        direction={{ base: "column", md: "row" }}
-        textAlign="center" w="25%" m="auto"
-        justify="center"
-        spacing={{ base: 4, lg: 10 }}
-        py={10}
-      >
-        {priceData.map((ele) =>
-            <PriceWrapper>
-              <Box py={4} px={12}>
-                <Text
-                  fontWeight="500"
-                  fontSize="2xl"
-                  background="lightblue"
-                  borderRadius="25px"
-                >
-                  {ele.title}
-                </Text>
-                <HStack justifyContent="center">
-                  <Text fontSize="3xl" fontWeight="600">
-                    $
-                  </Text>
-                  <Text fontSize="3xl" fontWeight="600">
-                    {ele.price}
-                  </Text>
-                  <Text fontSize="3xl" color="gray.500">
-                    /month
-                  </Text>
-                </HStack>
+    <Box w="100%" h="60vh" background="#335eea">
+      <Box m="auto" w="60%" mb="3%" textAlign="center">
+        <Heading
+          as="h1"
+          lineHeight="80px"
+          size="lg"
+          pt="3%"
+          color="white"
+          fontFamily="Poppins, Arial, sans-serif"
+        >
+          Get the Whole Stack, or Just the Pieces you Need
+        </Heading>
+        <Heading
+          as="h1"
+          size="md"
+          m="auto"
+          color="white"
+          fontFamily='Poppins, "Segoe UI", Arial, sans-serif'
+        >
+          Completely FREE Migration Service from Any Other Platform. No Hassles.
+        </Heading>
+      </Box>
+      <Flex background="white" w="80%" m="auto" borderRadius="20px">
+        <Tabs
+          variant="soft-rounded"
+          colorScheme="blue"
+          size="lg"
+          m="auto"
+          w="100%"
+          p="20px" 
+        >
+          <TabList >
+            {pair4.map((ele) => (
+                <Box w="25%" key={ele.title} >
+                <NavLink to={`${ele.Route}`}>
+              <Tab w="100%" m="auto" onClick={ ()=> ele.Route === "/service" ? setService(true): setService(false) }>
+                  <VStack>
+              {/* {ele.Route  : ()=>{setService(false)} } */}
+                    <Heading as="h4" size="md">
+                      {ele.title}
+                    </Heading>
+                    <Text>{ele.desc}</Text>
+                  </VStack>
+              </Tab>
+                </NavLink>
               </Box>
-              <VStack
-                bg="white"
-                py={4}
-                borderBottomRadius={"xl"}
-              >
-                <List spacing={3} textAlign="start" px={10}>
-                  <ListItem>
-                    <ListIcon as={FaCheckCircle} color="green.500" />
-                    {ele.n1}
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={FaCheckCircle} color="green.500" />
-                    {ele.n2}
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={FaCheckCircle} color="green.500" />
-                    {ele.n3}
-                  </ListItem>
-                </List>
-                <Box w="80%" pt={7}>
-                  <Button w="full" colorScheme="red">
-                    Start trial
-                  </Button>
-                </Box>
-              </VStack>
-            </PriceWrapper>
-        )}
-      </Stack>
+            ))}
+          </TabList>
+          {/* <TabPanels>
+            <TabPanel>
+              <p>one!</p>
+            </TabPanel>
+          </TabPanels> */}
+        </Tabs>
+      </Flex>
+
+        {service === false ?
+      <Flex
+        background="#37c1f9"
+        w="40%"
+        m="auto"
+        borderRadius="25px"
+        mt="5.7%"
+        h="6.2vh"
+      >
+        <Tabs variant="soft-rounded" colorScheme="green" color="red" w="100%">
+          <TabList>
+            <Box m="left" w="33%">
+              <NavLink to="/" m="auto">
+                <Tab m="auto" w="100%" color="white">
+                  Monthly
+                </Tab>
+              </NavLink>
+            </Box>
+
+            <Box m="auto" w="33%">
+              <NavLink to="/year" m="auto">
+                <Tab m="auto" color="white" w="100%">
+                  Yearly (8% off)
+                </Tab>
+              </NavLink>
+            </Box>
+
+            <Box m="right" w="33%">
+              <NavLink to="/biennial" m="auto">
+                <Tab m="right" color="white" w="100%">
+                  Biennial (15% off)
+                </Tab>
+              </NavLink>
+            </Box>
+          </TabList>
+          {/* <TabPanels >
+            <TabPanel>
+            </TabPanel>
+          </TabPanels> */}
+        </Tabs>
+      </Flex>
+        : <Box></Box>}
     </Box>
   );
 };
