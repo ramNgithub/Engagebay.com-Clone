@@ -1,8 +1,11 @@
 import { HStack, Box, Image, Stack, MenuButton, Button, MenuList, Menu, MenuItem, } from '@chakra-ui/react'
 import React from 'react'
 import { ChevronDownIcon } from "@chakra-ui/icons"
+import { useNavigate } from 'react-router-dom'
+
 
 const Navbar = () => {
+    const navigate = useNavigate()
     return (
         <>
             <Stack h={["40px", "50px", "80px"]} border="0px solid red" >
@@ -29,7 +32,9 @@ const Navbar = () => {
                         <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}>Blog</Button>
                         <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}>Login</Button>
                         <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="#573098" borderRadius="2px" _hover={{ "bg": "#573098" }} color="white" >Free Demo</Button>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="#FF885E" borderRadius="2px" _hover={{ "bg": "#FF7342" }} color="white" >Free SignUp</Button>
+                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="#FF885E" borderRadius="2px" _hover={{ "bg": "#FF7342" }} color="white" onClick={()=>{
+                            navigate("signup")
+                        }} >Free SignUp</Button>
                     </HStack>
                 </HStack>
             </Stack>
