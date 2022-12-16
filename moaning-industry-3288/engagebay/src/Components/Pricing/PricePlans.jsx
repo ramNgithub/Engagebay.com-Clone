@@ -58,7 +58,7 @@ const PricePlans = () => {
         >
           <TabList >
             {pair4.map((ele) => (
-                <Box w="25%" key={ele.title} border="1px solid red">
+                <Box w="25%" key={ele.title} >
                 <NavLink to={`${ele.Route}`}>
               <Tab w="100%" m="auto" onClick={ ()=> ele.Route === "/service" ? setService(true): setService(false) }>
                   <VStack>
