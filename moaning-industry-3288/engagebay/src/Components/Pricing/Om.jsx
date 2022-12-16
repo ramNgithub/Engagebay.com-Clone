@@ -1,18 +1,18 @@
 import React from 'react'
 import { ChakraProvider } from "@chakra-ui/react";
 import Month from "./PricePlans"
-import { BrowserRouter } from "react-router-dom";
-import AllRoutes from "./Routes/AllRoutes"
+// import { BrowserRouter } from "react-router-dom";
+// import AllRoutes from "./Routes/AllRoutes"
 
 const Om = () => {
   return (
     <div>
-        <BrowserRouter>
+        {/* <BrowserRouter> */}
         <ChakraProvider>
           <Month/>
-          <AllRoutes/>
+          {/* <AllRoutes/> */}
         </ChakraProvider>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
     </div>
   )
 }

@@ -4,10 +4,10 @@ import SignUp from '../Components/SignUp'
 
 const MainRoutes = () => {
   return (
-    <Route>
-        <Routes path="/"></Routes>
-        <Routes path="/signup" element={<SignUp/>}></Routes>
-    </Route>
+    <Routes>
+        <Route path="/"/>
+        <Route path="/signup" element={<SignUp/>}/>
+    </Routes>
   )
 }
 

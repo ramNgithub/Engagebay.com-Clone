@@ -1,0 +1,63 @@
+.Footer{
+    background-image: url("https://cdn5.engagebay.com/new/assets/img/footer_bg.jpeg");
+    background-size: cover;
+    /* height: 1200px; */
+    background-attachment: fixed;
+    margin-top: 150px;
+}
+.Footer_ImgNinput_div{
+    display: flex;
+    
+}
+.Footer_input{
+    padding: 15px 170px 15px 10px;
+    border-radius: 5px;
+    border-style: none;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.Footer_input::placeholder{
+    font-size: 17px;
+    color: white;
+}
+.Get_Started{
+    margin-left: 200px;
+    margin-top: -55px;
+}
+.Footer_Multi_Options{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.Footer_Multi_Options>div>p{
+    color:white;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.Footer_Multi_Options>div>h5{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.Footer_Multi_Options>div>button{
+    color: white;
+    font-weight: bold;
+
+}
+.Footer_Social_Logo{
+    display: flex;
+    gap: 30px;
+   margin-top: 30px;
+}
+.Footer_Social_Logo>p{
+    margin-top: 8px;
+    font-size: 13px;
+}
+.Footer-Footer-Section{
+    display: flex;
+    gap: 150px;
+    margin-top: 30px;
+    padding-left: 75px;
+    height: 250px;
+    color: white;
+}
