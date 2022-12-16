@@ -1,5 +1,5 @@
 import React from "react";
-import engagebayawards from "../assets/engagebayawards.png";
+// import engagebayawards from "../assets/engagebayawards.png";
 
 import {
   Box,
@@ -104,7 +104,7 @@ export const AutoDailer = () => {
         />
       </div>
       <div>
-        <img src={engagebayawards} alt="engagebayawards" />
+        {/* <img src={engagebayawards} alt="engagebayawards" /> */}
       </div>
       <div id="info" className="my-10">
         {/* 1 */}
