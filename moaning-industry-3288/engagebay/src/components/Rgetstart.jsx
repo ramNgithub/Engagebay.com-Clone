@@ -37,7 +37,7 @@ const Rgetstart = () => {
           </div>
       </div>
       <div className='twostarted'>
-        <h1 className='unli'>GET STARTED</h1>
+        <h1>GET STARTED</h1>
         <form className='inp'>
             <input placeholder='Name'></input>
             <input placeholder='Email'></input>
