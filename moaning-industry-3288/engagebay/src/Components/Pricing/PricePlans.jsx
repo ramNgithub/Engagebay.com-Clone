@@ -21,16 +21,14 @@ const pair4 = [
 ];
 
 const PricePlans = () => {
-
   const [service, setService] = useState(false);
 
   return (
     <Box w="100%" h="60vh" background="#335eea">
-      <Box m="auto" w="60%" mb="3%" textAlign="center">
+      <Box m="auto" w="90%" mb="3%" textAlign="center">
         <Heading
           as="h1"
-          lineHeight="80px"
-          size="lg"
+          fontSize={{ sm: "1rem", md: "1.5rem", lg: "2rem" }}
           pt="3%"
           color="white"
           fontFamily="Poppins, Arial, sans-serif"
@@ -38,37 +36,71 @@ const PricePlans = () => {
           Get the Whole Stack, or Just the Pieces you Need
         </Heading>
         <Heading
-          as="h1"
-          size="md"
+          as="h3"
+          fontSize={{ sm: "12px", md: "15px", lg: "20px" }}
           m="auto"
+          mt="2%"
           color="white"
           fontFamily='Poppins, "Segoe UI", Arial, sans-serif'
         >
           Completely FREE Migration Service from Any Other Platform. No Hassles.
         </Heading>
       </Box>
-      <Flex background="white" w="80%" m="auto" borderRadius="20px">
+      <Flex
+        background="white"
+        m="auto"
+        borderRadius="20px"
+        w={{ sm: "40%", md: "60%", lg: "80%" }}
+        h={{  base:"50vh", sm: "50vh", md: "35vh", lg: "15vh" }}
+      >
         <Tabs
           variant="soft-rounded"
           colorScheme="blue"
-          size="lg"
-          m="auto"
+          fontSize={{sm: "1rem", md: "1.5rem", lg: "2rem" }}
           w="100%"
-          p="20px" 
+          h={{  base:"50vh", sm: "50vh", md: "35vh", lg: "15vh" }}
+          m="auto"
         >
-          <TabList >
+          <TabList
+            display="grid"
+            h={{  base:"50vh", sm: "50vh", md: "35vh", lg: "15vh" }}
+            m="auto"
+            gridTemplateColumns={{
+              sm: "repeat(1, 1fr)",
+              md: "repeat(2, 1fr)",
+              lg: "repeat(4, 1fr)",
+            }}
+          >
             {pair4.map((ele) => (
-                <Box w="25%" key={ele.title} >
+              <Box
+                w={{ sm: "60%", md: "80%", lg: "100%" }}
+                key={ele.title} m="auto"
+              >
                 <NavLink to={`${ele.Route}`}>
-              <Tab w="100%" m="auto" onClick={ ()=> ele.Route === "/service" ? setService(true): setService(false) }>
-                  <VStack>
-              {/* {ele.Route  : ()=>{setService(false)} } */}
-                    <Heading as="h4" size="md">
-                      {ele.title}
-                    </Heading>
-                    <Text>{ele.desc}</Text>
-                  </VStack>
-              </Tab>
+                  <Tab
+                    m="auto"
+                    w="100%"
+                    onClick={() =>
+                      ele.Route === "/service"
+                        ? setService(true)
+                        : setService(false)
+                    }
+                  >
+                    <VStack>
+                      {/* {ele.Route  : ()=>{setService(false)} } */}
+                      <Heading
+                        as="h4"
+                        fontSize={{ sm: "1rem", md: "1rem", lg: "1.3rem" }}
+                      >
+                        {ele.title}
+                      </Heading>
+                      <Text
+                        fontSize={{ sm: "0.5rem", md: "0.8rem", lg: "1rem" }}
+                      >
+                        {ele.desc}
+                      </Text>
+                    </VStack>
+                  </Tab>
                 </NavLink>
               </Box>
             ))}
@@ -81,48 +113,50 @@ const PricePlans = () => {
         </Tabs>
       </Flex>
 
-        {service === false ?
-      <Flex
-        background="#37c1f9"
-        w="40%"
-        m="auto"
-        borderRadius="25px"
-        mt="5.7%"
-        h="6.2vh"
-      >
-        <Tabs variant="soft-rounded" colorScheme="green" color="red" w="100%">
-          <TabList>
-            <Box m="left" w="33%">
-              <NavLink to="/" m="auto">
-                <Tab m="auto" w="100%" color="white">
-                  Monthly
-                </Tab>
-              </NavLink>
-            </Box>
+      {service === false ? (
+        <Flex
+          background="#37c1f9"
+          w="40%"
+          m="auto"
+          borderRadius="25px"
+          mt="5.7%"
+          h="6.2vh"
+        >
+          <Tabs variant="soft-rounded" colorScheme="green" color="red" w="100%">
+            <TabList>
+              <Box m="left" w="33%">
+                <NavLink to="/" m="auto">
+                  <Tab m="auto" w="100%" color="white">
+                    Monthly
+                  </Tab>
+                </NavLink>
+              </Box>
 
-            <Box m="auto" w="33%">
-              <NavLink to="/year" m="auto">
-                <Tab m="auto" color="white" w="100%">
-                  Yearly (8% off)
-                </Tab>
-              </NavLink>
-            </Box>
+              <Box m="auto" w="33%">
+                <NavLink to="/year" m="auto">
+                  <Tab m="auto" color="white" w="100%">
+                    Yearly (8% off)
+                  </Tab>
+                </NavLink>
+              </Box>
 
-            <Box m="right" w="33%">
-              <NavLink to="/biennial" m="auto">
-                <Tab m="right" color="white" w="100%">
-                  Biennial (15% off)
-                </Tab>
-              </NavLink>
-            </Box>
-          </TabList>
-          {/* <TabPanels >
+              <Box m="right" w="33%">
+                <NavLink to="/biennial" m="auto">
+                  <Tab m="right" color="white" w="100%">
+                    Biennial (15% off)
+                  </Tab>
+                </NavLink>
+              </Box>
+            </TabList>
+            {/* <TabPanels >
             <TabPanel>
             </TabPanel>
           </TabPanels> */}
-        </Tabs>
-      </Flex>
-        : <Box></Box>}
+          </Tabs>
+        </Flex>
+      ) : (
+        <Box></Box>
+      )}
     </Box>
   );
 };
