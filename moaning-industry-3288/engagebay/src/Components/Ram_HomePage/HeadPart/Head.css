@@ -6,11 +6,11 @@
 }
 .TopHeading>h1{
     font-size: 80px;
+    margin-bottom: 30px;
 }
 .TopHeading>p{
     
     font-size: 27px;
-    margin-top: -27px;
 }
 .TopInputNButton{
     text-align: center;

@@ -1,0 +1,30 @@
+.Card{
+    width:80%;
+    height: 600px;
+    background-image: url("https://cdn5.engagebay.com/new/assets/img/testmonial-back.webp");
+    text-align: center;
+    
+}
+.Card>img{
+    width: 180px;
+    height: 180px;
+    border-radius: 250px;
+    margin-top: 50px;
+    margin-left: 450px;
+}
+.Card>h1{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.Card>img+p{
+    width:700px;
+    margin-left: 200px;
+    font-size: 20px;
+    margin-top: 40px;
+    color:gray
+}
+.Card>h2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
+}
