@@ -36,5 +36,21 @@
     cursor: pointer;
 }
 .Marquee-container{
-    background-color: aliceblue;
+    background-color: rgb(239, 248, 255);
+    margin-bottom: -130px;
+    margin-top: 150px;
+    height: 650px;
+}
+.Marquee-container>h1{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+.Marquee-container>p{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 80px;
 }
