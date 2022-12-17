@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Resource.css";
 import Rgetstart from "./Rgetstart";
-
+import Footer from "./Ram_HomePage/Footer/Footer";
 const Resource = () => {
   return (
     <div>
@@ -95,6 +95,7 @@ const Resource = () => {
           </div>
       </div>
       <Rgetstart/>
+      <Footer/>
      
     </div>
     
