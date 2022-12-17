@@ -1,36 +1,28 @@
+
 import React from 'react'
 import "./MiddleCenter.css"
 import MarqueeAtuo from './MiddleLower/MarqueeAtuo';
 import Tabs from "./Tabs"
 
-const MiddleCenter = () => {
-  return (
+ const MiddleCenter = () => {
+   return (
     <div>
-        <div className='Happy_Customer_Reviews'>
-            <h2>HAPPY CUSTOMERS SHARE GREATE REVIEWS ON G2</h2>
+         <div className='Happy_Customer_Reviews'>
+             <h2>HAPPY CUSTOMERS SHARE GREATE REVIEWS ON G2</h2>
             <div className='Happy_Customer_Reviews_All_Img'>
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_AsiaPacific_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Europe_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Small-Business_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_MomentumLeader_Leader.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Mid-Market_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Small-Business_HighPerformer.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/HelpDesk_EasiestAdmin_EaseOfAdmin.svg" alt="Not-Found" />
-                <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/OnlineFormBuilder_FastestImplementation_Small-Business_GoLiveTime.svg" alt="Not-Found" />
-            </div>
-        </div>
-
-
-        
-
-
-
-        
-
-
-        <div className='Do_It_All_With_EngageBay'>
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_AsiaPacific_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Europe_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Small-Business_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_MomentumLeader_Leader.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Mid-Market_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Small-Business_HighPerformer.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/HelpDesk_EasiestAdmin_EaseOfAdmin.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/OnlineFormBuilder_FastestImplementation_Small-Business_GoLiveTime.svg" alt="Not-Found" />
+             </div>
+         </div>
+         <div className='Do_It_All_With_EngageBay'>
             <h1 data-aos="fade-up" style={{fontSize:"40px"}}>Do It All With EngageBay</h1>
             <p data-aos="fade-up" style={{fontSize:"20px",color:"gray",marginTop:"20px"}}>Stop paying thousands of dollars to dozens of marketing, sales, and support software. Experience the world's most <br/> affordable, unified software. EngageBay's all-in-one CRM software is the most comprehensive solution for your <br/> business.</p>
             <div className='Do_It_All_With_EngageBay_Divs'>
@@ -254,3 +246,4 @@ const MiddleCenter = () => {
 }
 
 export default MiddleCenter;
+
