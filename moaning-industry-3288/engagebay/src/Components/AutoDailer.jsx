@@ -1,6 +1,6 @@
 import React from "react";
 import engagebayawards from "../assets/engagebayawards.png";
-import "./auto.css";
+import "../styles/auto.css";
 import {
   Box,
   Accordion,
