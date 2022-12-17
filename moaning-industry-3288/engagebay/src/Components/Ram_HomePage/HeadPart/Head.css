@@ -7,9 +7,11 @@
 .TopHeading>h1{
     font-size: 80px;
     margin-bottom: 30px;
+    width:1130px;
+    margin-left:90px;
 }
 .TopHeading>p{
-    
+    color: gray;
     font-size: 27px;
 }
 .TopInputNButton{
@@ -58,6 +60,14 @@
 .rightIcon>p{
     margin-top: -15px;
 }
+.rightIcon_ImgNp{
+    display: flex;
+    gap: 10px;
+}
+.rightIcon_ImgNp>img{
+  width: 18px;
+  height: 20px;
+}
 /* .TopInputNButton>button{
     background-color: white;
     color: black;
@@ -68,18 +78,26 @@
     height: 200px;
     background-color: white;
     padding: 0px 100px;
-    width: 102%;
-    margin-left: -110px;
+    width: 116.8%;
+    gap: 30px;
+    margin-left:-110px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 .TopsevenImage>img{
     width: 150px;
     height: 50px;
     margin-top: 60px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
     
 }
 
+@media (min-width:0px) and (max-width:560px){
+    .TopHeading>h1{
+        font-size: 50px;
+        margin-bottom: 30px;
+        width:500px;
+        /* margin-left:90px; */
+    }
+}
 
-/*     
- */
+

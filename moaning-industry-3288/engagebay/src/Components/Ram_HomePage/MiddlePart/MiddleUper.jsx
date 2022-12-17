@@ -26,30 +26,30 @@ const MiddleUper = () => {
                     </div>
                 </div>
             
-                <div style={{marginLeft:"40px",marginTop:"45px"}}>
+                <div style={{marginLeft:"40px"}}>
                     <br/>
-                    <b>POPULAR FEATURES</b><br/>
+                    <b style={{color:"black"}}>POPULAR FEATURES</b><br/>
                       <div style={{display:"flex"}}>
                         <div>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Contact Management</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Contact Management</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Sales Automation</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Sales Automation</p>
                             </div>
                         </div>
                         <div style={{marginLeft:"130px"}}>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Deal Management</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Deal Management</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Appointment Scheduling</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Appointment Scheduling</p>
                             </div>
                         </div>
                       </div>
@@ -71,30 +71,30 @@ const MiddleUper = () => {
                     </div>
                 </div>
             
-                <div style={{marginLeft:"40px",marginTop:"45px"}}>
+                <div style={{marginLeft:"40px"}}>
                     <br/>
-                    <b>POPULAR FEATURES</b><br/>
+                    <b style={{color:"black"}}>POPULAR FEATURES</b><br/>
                       <div style={{display:"flex"}}>
                         <div>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Forms & Landing Pages</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Form & Landing Pages</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Marketing Automation</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Email Sequences</p>
                             </div>
                         </div>
                         <div style={{marginLeft:"130px"}}>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Email Sequences</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Marketing Automation</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Email Template Builder</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Email Template Builder</p>
                             </div>
                         </div>
                       </div>
@@ -118,30 +118,30 @@ const MiddleUper = () => {
                     </div>
                 </div>
             
-                <div style={{marginLeft:"40px",marginTop:"45px"}}>
+                <div style={{marginLeft:"40px"}}>
                     <br/>
-                    <b>POPULAR FEATURES</b><br/>
+                    <b style={{color:"black"}}>POPULAR FEATURES</b><br/>
                       <div style={{display:"flex"}}>
                         <div>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Ticket Management</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Instant Support</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Macro</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Shortcuts</p>
                             </div>
                         </div>
                         <div style={{marginLeft:"130px"}}>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Views</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Chat Form Customisation</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Ticket Automation</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Notification</p>
                             </div>
                         </div>
                       </div>
@@ -163,30 +163,30 @@ const MiddleUper = () => {
                     </div>
                 </div>
             
-                <div style={{marginLeft:"40px",marginTop:"45px"}}>
+                <div style={{marginLeft:"40px"}}>
                     <br/>
-                    <b>POPULAR FEATURES</b><br/>
+                    <b style={{color:"black"}}>POPULAR FEATURES</b><br/>
                       <div style={{display:"flex"}}>
                         <div>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Instant Support</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Ticket Management</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Shortcuts</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Macro</p>
                             </div>
                         </div>
                         <div style={{marginLeft:"130px"}}>
-                            <div style={{display:"flex",gap:"10px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Chat Form Customisation</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"20px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Ticket Management</p>
                             </div>
 
-                            <div style={{display:"flex",gap:"10px",marginTop:"-20px"}}>
-                                <img style={{width:"18px",height:"20px",marginTop:"19px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
-                                <p>Notification</p>
+                            <div style={{display:"flex",gap:"10px",marginTop:"12px"}}>
+                                <img style={{width:"18px",height:"20px"}} src="https://www.catherine-capaldo.com/wp-content/uploads/2019/01/check-300x300.png' " alt="Not-Found" />
+                                <p style={{color:"gray"}}>Macro</p>
                             </div>
                         </div>
                       </div>

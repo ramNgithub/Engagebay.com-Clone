@@ -13,18 +13,20 @@ import { AutoDailer } from "./Components/AutoDailer";
 import React from 'react'
 import Om from "./Components/Pricing/Om";
 import Footer from "./Components/Ram_HomePage/Footer/Footer"
+import Home from './Components/Ram_HomePage/Home.jsx';
 
 const App = () => {
   return (
     <div className="App">
-      <Head/>
+      {/* <Head/>
       <MiddleUper/>
       <MiddleCenter/>
       
-      <Footer/>
-      <Om/>
+      <Footer/> */}
+      <Home/>
+      {/* <Om/>
       <Resource/>
-      <AutoDailer/>
+      <AutoDailer/> */}
    </div>
 
   );
