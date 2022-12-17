@@ -13,6 +13,7 @@ import { AutoDailer } from "./Components/AutoDailer";
 import React from 'react'
 import Om from "./Components/Pricing/Om";
 import Footer from "./Components/Ram_HomePage/Footer/Footer"
+import Blog from './Components/Blog.jsx';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Om/>
       <Resource/>
       <AutoDailer/>
+      <Blog/>
    </div>
 
   );
