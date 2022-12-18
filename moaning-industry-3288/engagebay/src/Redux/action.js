@@ -28,11 +28,11 @@ const post_data_request = () => {
 
 export const GetData = (dispatch) => {
     dispatch(get_data_request)
-    axios.get("http://localhost:8080/users").then((r) => dispatch(get_data_success(r.data))).catch((e) => dispatch(get_data_error))
+    axios.get("https://localhost:8080/users").then((r) => dispatch(get_data_success(r.data))).catch((e) => dispatch(get_data_error))
 }
 
 export const PostData = (data) => (dispatch) => {
     dispatch(post_data_request)
-    axios.post("http://localhost:8080/users", data).then((r) => GetData).catch((e) => dispatch(get_data_error))
+    axios.post("https://localhost:8080/users", data).then((r) => GetData).catch((e) => dispatch(get_data_error))
     dispatch(GetData)
 }
