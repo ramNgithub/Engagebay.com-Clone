@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "name": "monu",
+      "email": "monu@reqres.in",
+      "phone": "7725833490",
+      "website": "http://gmail.com",
+      "password": "cityslicka",
+      "id": 1
+    },
+    {
+      "name": "ravi",
+      "email": "ravi@reqres.in",
+      "phone": "7888013101",
+      "website": "fsfsfhttp://gmail.com",
+      "password": "ravi_123",
+      "id": 2
+    },
+    {
+      "name": "Himanshu sharma",
+      "email": "hs.gamail.com",
+      "phone": "7725833490",
+      "website": "fsfsfhttp://gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "ram naphade",
+      "email": "ramnaphade@gmail.com",
+      "phone": "444444444444",
+      "website": "fsfsfhttp://gmail.com",
+      "password": "45544555454554545",
+      "id": 4
+    },
+    {
+      "name": "asdfas",
+      "email": "ram@gmail.com",
+      "phone": "1234567895",
+      "website": "fsfsfhttp://gmail.com",
+      "password": "ram123",
+      "id": 5
+    },
+    {
+      "name": "Mahesh paranjiya",
+      "email": "eve.holt@reqres.in",
+      "phone": "7725833490",
+      "website": "monu@gmail.com",
+      "password": "12345",
+      "id": 6
+    },
+    {
+      "name": "Mahesh paranjiya",
+      "email": "eve.holt@reqres.in",
+      "phone": "7725833490",
+      "website": "monu@gmail.com",
+      "password": "12345",
+      "id": 7
+    }
+  ]
+}
