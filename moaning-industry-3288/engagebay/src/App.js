@@ -1,6 +1,7 @@
 
 import Resource from "./Components/Resource.jsx";
-
+import Navbar from "./Components/Navbar"
+import MainRoutes from "./Router/MainRoutes"
 import { AutoDailer } from "./Components/AutoDailer";
 import React from "react";
 import Om from "./Components/Pricing/Om";
@@ -11,18 +12,8 @@ import Blog from './Components/Blog.jsx';
 const App = () => {
   return (
     <div className="App">
-
-      
-      <Home/>
-
-   
-
-
-      <Om/>
-      <Resource/> 
-      <AutoDailer/>
-      <Blog/>
-
+      <Navbar/>
+      <MainRoutes />
    </div>
 
   );

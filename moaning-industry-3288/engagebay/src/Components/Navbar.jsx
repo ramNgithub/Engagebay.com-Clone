@@ -12,7 +12,7 @@ const Navbar = () => {
             <Stack h={["40px", "50px", "90px"]} border="0px solid red" >
                 <HStack justifyContent="space-between" border="0px solid black" w={["85%", "85%", "82%"]} m="auto" h="100%">
                     <Box border="0px solid green" width={["10%", "25%", "13%"]}>
-                        <Image src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg " />
+                        <Link to="/"><Image src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg " /></Link>
                     </Box>
                     <HStack border="0px solid red" justifyContent="space-evenly" w="70%">
                         <Menu>
@@ -27,19 +27,20 @@ const Navbar = () => {
                                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
                             </MenuList>
                         </Menu>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} >Pricing</Button>
-                        <Menu>
-                            <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}>
-                                Resource
-                            </MenuButton>
-                            <MenuList  >
+                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/pricing">Pricing</Link></Button>
+                        {/* <Menu> */}
+                            {/* <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}> */}
+                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/resource">Resource</Link></Button> 
+                            {/* </MenuButton> */}
+                            {/* <MenuList  >
                                 <MenuItem _hover={{ bg: "orange.200" }}>UTM Builder</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Signature</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Tracker</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Validator</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
-                            </MenuList>
-                        </Menu>                        <Menu>
+                            </MenuList> */}
+                        {/* </Menu>                        */}
+                         <Menu>
                             <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Free Tools
                             </MenuButton>

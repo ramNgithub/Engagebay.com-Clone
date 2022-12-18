@@ -3,6 +3,7 @@ import React from 'react'
 import "./MiddleCenter.css"
 import MarqueeAtuo from './MiddleLower/MarqueeAtuo';
 import Tabs from "./Tabs"
+import {Link} from "react-router-dom"
 
  const MiddleCenter = () => {
    return (
@@ -33,7 +34,9 @@ import Tabs from "./Tabs"
                     </p>
                 </div>
                 <div data-aos="fade-up">
-                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calling.svg" alt="Not-Found"/>
+                <Link to="/dailer">
+                    <img style={{width:"70px", margin:"auto", marginTop:"30px"}} src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/calling.svg" alt="Not-Found"/>
+                </Link>            
                     <p>
                         <b>Calling</b>
                     </p>
