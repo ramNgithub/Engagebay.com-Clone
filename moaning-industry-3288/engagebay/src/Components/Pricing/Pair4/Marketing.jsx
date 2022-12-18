@@ -14,18 +14,21 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
+import ComparePrice from "../Middle/ComparePrice";
+import GirlData from "../Middle/GirlData";
+import PricePlans from "../PricePlans";
+import Footer from "../../Ram_HomePage/Footer/Footer";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
     <Box
-      mb={4}
-      shadow="base"
-      w="110%"
-      h="100vh"
-      border="1px solid red"
-      alignSelf={{ base: "center", lg: "flex-start" }}
-      borderColor={useColorModeValue("gray.200", "gray.500")}
-      borderRadius={"xl"}
+    m="auto"
+    w="100%"
+    border="1px solid red"
+    borderColor={useColorModeValue("gray.200", "gray.500")}
+    borderRadius={"xl"}
+    mt="3%"
+    overflow="unset"
     >
       {children}
     </Box>
@@ -94,24 +97,27 @@ const priceData = [
 
 const Marketing = () => {
   return (
-    <Box py={12} id="Marketing" w="80%" m="auto">
+    <Box>
+      <PricePlans/>
+    <Box py={12} id="month" w="90%" m="auto" mt="3%">
       <Stack
-        direction={{ base: "column", md: "row" }}
         textAlign="center"
-        w="25%"
-        m="auto"
-        justify="center"
-        spacing={{ base: 4, lg: 10 }}
-        py={10}
+        display="grid"
+        gridTemplateColumns={{
+          sm: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(4, 1fr)",
+        }}
+        borderColor={useColorModeValue("gray.200", "gray.500")}
+        gap="6"
       >
         {priceData.map((ele) => (
           <PriceWrapper>
-            <Box py={4} px={12}>
+            <Box py={4} background="lightblue">
               <Text
                 fontWeight="500"
-                fontSize="2xl"
-                background="lightblue"
-                borderRadius="25px"
+                fontSize="2rem"
+                borderRadius="35px" w="auto" m="auto"
               >
                 {ele.title}
               </Text>
@@ -207,6 +213,10 @@ const Marketing = () => {
           </PriceWrapper>
         ))}
       </Stack>
+    </Box>
+    <ComparePrice/>
+    <GirlData/>
+    <Footer/>
     </Box>
   );
 };

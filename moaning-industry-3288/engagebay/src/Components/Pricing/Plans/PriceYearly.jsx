@@ -14,6 +14,10 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
+import PricePlans from "../PricePlans";
+import ComparePrice from "../Middle/ComparePrice";
+import GirlData from "../Middle/GirlData";
+import Footer from "../../Ram_HomePage/Footer/Footer";
 
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
@@ -94,6 +98,8 @@ const priceData = [
 
 const PriceYearly = () => {
   return (
+    <Box>
+      <PricePlans/>
     <Box py={12} id="Year" w="80%" m="auto">
       <Stack
         direction={{ base: "column", md: "row" }}
@@ -209,6 +215,10 @@ const PriceYearly = () => {
             </PriceWrapper>
         )}
       </Stack>
+    </Box>
+    <ComparePrice/>
+    <GirlData/>
+    <Footer/>
     </Box>
   );
 };

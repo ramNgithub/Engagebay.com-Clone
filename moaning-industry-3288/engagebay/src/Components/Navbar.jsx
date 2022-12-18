@@ -20,14 +20,14 @@ const Navbar = () => {
                                 Products
                             </MenuButton>
                             <MenuList  >
-                                <MenuItem _hover={{ bg: "orange.200" }}>UTM Builder</MenuItem>
+                                <MenuItem _hover={{ bg: "orange.200" }}><Link to="/dailer">Calling</Link></MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Signature</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Tracker</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Validator</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
                             </MenuList>
                         </Menu>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/pricing">Pricing</Link></Button>
+                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/price">Pricing</Link></Button>
                         {/* <Menu> */}
                             {/* <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}> */}
                         <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/resource">Resource</Link></Button> 
