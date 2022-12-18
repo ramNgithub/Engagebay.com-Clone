@@ -1,104 +1,373 @@
 .eng{
-  text-align: center;
-  border: 0px solid red;
-  padding-bottom: 100px;
-}
-.eng>h1{
-    font-weight: 400;
-    font-size:3rem;
-    color: rgb(60, 38, 112); 
-}
-.eng>p{
-    font-weight: 700;
-    color: rgb(41, 36, 36);
-    font-weight: 700;
-}
-.ebox{
-    border: 0px solid orangered;
-}
-.ebox1{
-    border: 0px solid green;
-    display: flex;
-   justify-content: center;
-   gap: 40px;
-   margin-bottom: 50px;
-
-   
-    
-}
-.ebox1>div{
-    border: 0px solid red;
-    width: 300px;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 30px;
-    transition: all 0.5s;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-    
-    
-
-}
-.ebox1>div:hover{
-    
-    background-color: rgb(250, 242, 242);
-}
-.ebox1>div>img{
-    width: 300px;
-    
-}
-.ebox1>div>h1{
-    font-weight: 400;
-    font-size:2.3rem;
-    color: rgb(95, 90, 97);
-    
-}
-.ebox1>div>a{
-    text-decoration: none;
-    color: rgb(57, 57, 175);
-    font-weight: 500;
-    font-size: large;
-}
-.ebox2>div{
     border: 0px solid red;
-    width: 300px;
-    text-align: center;
-    padding: 10px;
-    padding-bottom: 30px;
-    transition: all 0.5s;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-    
-}
-.ebox2>div:hover{
-    
-    background-color: rgb(250, 242, 242);
-}
-.ebox2>div>img{
-    width: 300px;
-    
-}
-.ebox2>div>h1{
-    font-weight: 400;
-    font-size:2.3rem;
-    color: rgb(95, 90, 97);
-    
-}
-.ebox2>div>a{
-    text-decoration: none;
-    color: rgb(57, 57, 175);
-    font-weight: 500;
-    font-size: large;
-
-    
-
-}
-.ebox2{
-    border: 0px solid green;
-    display: flex;
-    padding-left: 159px;
-   gap: 30px;
-   margin-bottom: 50px;
-   
-    
-}
+    padding-bottom: 100px;
+  }
+  .eng>h1{
+      font-weight: 400;
+      font-size:3rem;
+      color: rgb(60, 38, 112); 
+  }
+  .eng>p{
+      font-weight: 700;
+      color: rgb(41, 36, 36);
+      font-weight: 700;
+  }
+  .ebox{
+      border: 0px solid orangered;
+  }
+  .ebox1{
+      border: 0px solid green;
+      display: flex;
+     justify-content: center;
+     gap: 40px;
+     margin-bottom: 50px;
+  
+     
+      
+  }
+  .ebox1>div{
+      border: 0px solid red;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+      padding-bottom: 30px;
+      transition: all 0.5s;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+      
+      
+  
+  }
+  .ebox1>div:hover{
+      
+      background-color: rgb(250, 242, 242);
+  }
+  .ebox1>div>img{
+      width: 300px;
+      
+  }
+  .ebox1>div>h1{
+      font-weight: 400;
+      font-size:2.3rem;
+      color: rgb(95, 90, 97);
+      
+  }
+  .ebox1>div>a{
+      text-decoration: none;
+      color: rgb(57, 57, 175);
+      font-weight: 500;
+      font-size: large;
+  }
+  .ebox2>div{
+      border: 0px solid red;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+      padding-bottom: 30px;
+      transition: all 0.5s;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+      
+  }
+  .ebox2>div:hover{
+      
+      background-color: rgb(250, 242, 242);
+  }
+  .ebox2>div>img{
+      width: 300px;
+      
+  }
+  .ebox2>div>h1{
+      font-weight: 400;
+      font-size:2.3rem;
+      color: rgb(95, 90, 97);
+      
+  }
+  .ebox2>div>a{
+      text-decoration: none;
+      color: rgb(57, 57, 175);
+      font-weight: 500;
+      font-size: large;
+  
+      
+  
+  }
+  .ebox2{
+      border: px solid green;
+      display: flex;
+      padding-left: 159px;
+     gap: 30px;
+     margin-bottom: 50px;
+     
+      
+  }
+  /* @media all and (min-width: 600px) and (max-width: 900px){
+      .eng{
+          text-align: center;
+          border: 4px solid red;
+          padding-bottom: 100px;
+        }
+  
+  }
+  @media all and (min-width: 400px) and (max-width: 600px){
+  
+      .eng{
+          text-align: center;
+          border: 4px solid red;
+          padding-bottom: 100px;
+        }
+  } */
+  @media only screen and (min-width:340px) and (max-width:480px){
+      .eng{
+          text-align: center;
+          width:100%;
+        }
+        .eng>h1{
+            font-weight: 400;
+            font-size:1rem;
+            
+        }
+        .eng>p{
+            font-weight: 300;
+           text-align: center;
+        }
+        .ebox{
+          border: 0px solid orangered;
+          width:50%; 
+          margin:auto;
+          margin-top:30px
+      }
+      .ebox1{
+          border: 0px solid green;
+          display: block;
+          width:100%;
+          /* margin-left: 0px; */
+  
+          /* margin-left:100px; */
+      
+  
+          /* display: flex; */
+         /* justify-content: center; */
+         /* gap: 40px; */
+         /* margin-bottom: 50px; */
+       
+      
+         
+          
+      }
+      .ebox1>div{
+          border: 0px solid red;
+          width: 300px;
+          text-align: center;
+          padding: 10px;
+          padding-bottom: 30px;
+          transition: all 0.5s;
+          width: 100%;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      
+          
+          
+      
+      }
+      .ebox1>div:hover{
+          
+          background-color: rgb(250, 242, 242);
+      }
+      .ebox1>div>img{
+          width: 300px;
+          text-align: center;
+          
+      }
+      .ebox1>div>h1{
+          font-weight: 400;
+          font-size:2.3rem;
+          color: rgb(95, 90, 97);
+          
+      }
+      .ebox1>div>a{
+          text-decoration: none;
+          color: rgb(57, 57, 175);
+          font-weight: 500;
+          font-size: large;
+      }
+      .ebox2>div{
+          border: 0px solid red;
+          /* width: 300px; */
+         
+          width:100%;
+          padding: 10px;
+          padding-bottom: 30px;
+          transition: all 0.5s;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          margin: auto;
+      
+          
+      }
+      .ebox2>div:hover{
+          
+          background-color: rgb(250, 242, 242);
+      }
+      .ebox2>div>img{
+          /* width: 300px;  */
+           width:100% 
+          
+      }
+      .ebox2>div>h1{
+          font-weight: 400;
+          font-size:2.3rem;
+          color: rgb(95, 90, 97);
+          
+      }
+      .ebox2>div>a{
+          text-decoration: none;
+          color: rgb(57, 57, 175);
+          font-weight: 500;
+          font-size: large;
+      
+          
+      
+      }
+      .ebox2{
+          border: 0px solid green;
+          /* display: flex; */
+          padding-left: 0px;
+          display: block;
+         gap: 30px;
+         margin-left: 0px;
+         
+         /* margin-bottom: 50px; */
+         
+      }
+  
+  
+  }
+  @media only screen and (min-width:481px) and (max-width:890px){
+      .eng{
+          text-align: center;
+           width: 50%;
+           margin:auto
+        }
+        .eng>h1{
+            font-weight: 400;
+            font-size:3rem;
+            
+        }
+        .eng>p{
+            text-align:center;
+            font-size: 13px;
+            
+        }
+  
+  
+  
+        .ebox{
+          border: 0px solid orangered;
+          width:50%; 
+          margin:auto;
+          margin-top:30px
+      }
+      .ebox1{
+          border: 0px solid green;
+          display: block;
+          width:100%;
+          /* margin-left: 0px; */
+  
+          /* margin-left:100px; */
+      
+  
+          /* display: flex; */
+         /* justify-content: center; */
+         /* gap: 40px; */
+         /* margin-bottom: 50px; */
+       
+      
+         
+          
+      }
+      .ebox1>div{
+          border: 0px solid red;
+          width: 300px;
+          text-align: center;
+          padding: 10px;
+          padding-bottom: 30px;
+          transition: all 0.5s;
+          width: 100%;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      
+          
+          
+      
+      }
+      .ebox1>div:hover{
+          
+          background-color: rgb(250, 242, 242);
+      }
+      .ebox1>div>img{
+          width: 300px;
+          text-align: center;
+          
+      }
+      .ebox1>div>h1{
+          font-weight: 400;
+          font-size:2.3rem;
+          color: rgb(95, 90, 97);
+          
+      }
+      .ebox1>div>a{
+          text-decoration: none;
+          color: rgb(57, 57, 175);
+          font-weight: 500;
+          font-size: large;
+      }
+      .ebox2>div{
+          border: 0px solid red;
+          /* width: 300px; */
+         
+          width:100%;
+          padding: 10px;
+          padding-bottom: 30px;
+          transition: all 0.5s;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          margin: auto;
+      
+          
+      }
+      .ebox2>div:hover{
+          
+          background-color: rgb(250, 242, 242);
+      }
+      .ebox2>div>img{
+          /* width: 300px;  */
+           width:100% 
+          
+      }
+      .ebox2>div>h1{
+          font-weight: 400;
+          font-size:2.3rem;
+          color: rgb(95, 90, 97);
+          
+      }
+      .ebox2>div>a{
+          text-decoration: none;
+          color: rgb(57, 57, 175);
+          font-weight: 500;
+          font-size: large;
+      
+          
+      
+      }
+      .ebox2{
+          border: 0px solid green;
+          /* display: flex; */
+          padding-left: 0px;
+          display: block;
+         gap: 30px;
+         margin-left: 0px;
+         
+         /* margin-bottom: 50px; */
+         
+          
+      }
+  }
+  
