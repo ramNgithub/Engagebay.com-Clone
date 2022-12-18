@@ -14,15 +14,15 @@ import Blog from './Components/Blog.jsx';
 const App = () => {
   return (
     <div className="App">
-      <Head/>
-      <MiddleUper/>
-      <MiddleCenter/>
-      <Footer/>
+      {/* <Head/> */}
+      {/* <MiddleUper/> */}
+      {/* <MiddleCenter/>
+      <Footer/> */}
       <Om/>
 
-      <Resource/> */}
+      {/* <Resource/> 
       <AutoDailer/>
-      <Blog/>
+      <Blog/> */}
    </div>
 
   );
