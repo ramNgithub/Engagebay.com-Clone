@@ -6,6 +6,8 @@ const MarqueeAtuo = () => {
   return (
     
     <div  className='Marquee-container'>
+        <h1>Our Integration Partners</h1>
+        <p>Stay connected to your favorite apps using EngageBay’s integrations</p>
         
         <Marquee pauseOnHover={true} speed={100}>
             <div className='Auto-slide-row-one'>
