@@ -101,9 +101,9 @@ export const AutoDailer = () => {
 
       <div id="info" className="my-10">
         {/* 1 */}
-        <div className="auto-info">
+        <div className="auto-info-odd">
           {/* left */}
-          <div className="w-6/12 ">
+          <div className="auto-info-content">
             <h1>Outbound Calls</h1>
             <p>
               Make calls from the EngageBay dashboard with a single click.
@@ -121,7 +121,7 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 2 */}
-        <div className="auto-info">
+        <div className="auto-info-even">
           {/* left */}
           <div>
             <img
@@ -130,7 +130,7 @@ export const AutoDailer = () => {
             />
           </div>
           {/* right */}
-          <div className="w-6/12">
+          <div className="auto-info-content">
             <h1>Inbound Calls</h1>
             <p>
               Don’t leave your CRM to receive calls from your contacts. Gain
@@ -140,9 +140,9 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 3 */}
-        <div className="auto-info">
+        <div className="auto-info-odd">
           {/* left */}
-          <div className="w-6/12 ">
+          <div className="auto-info-content">
             <h1>Alerts For Missed Calls</h1>
             <p>
               Know who called when you couldn't be available to receive the
@@ -159,7 +159,7 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 4 */}
-        <div className="auto-info">
+        <div className="auto-info-even">
           {/* left */}
           <div>
             <img
@@ -168,7 +168,7 @@ export const AutoDailer = () => {
             />
           </div>
           {/* right */}
-          <div className="w-6/12">
+          <div className="auto-info-content">
             <h1>Tagging Calls</h1>
             <p>
               For precise identification of your contacts in the future, add
@@ -178,9 +178,9 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 5 */}
-        <div className="auto-info">
+        <div className="auto-info-odd">
           {/* left */}
-          <div className="w-6/12 ">
+          <div className="auto-info-content">
             <h1>Muting Calls</h1>
             <p>
               A colleague has something important to convey during a call? The
@@ -197,7 +197,7 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 6 */}
-        <div className="auto-info">
+        <div className="auto-info-even">
           {/* left */}
           <div>
             <img
@@ -206,7 +206,7 @@ export const AutoDailer = () => {
             />
           </div>
           {/* right */}
-          <div className="w-6/12">
+          <div className="auto-info-content">
             <h1>Recording Calls & Playback</h1>
             <p>
               Always stay focused on the call instead of taking notes. For
@@ -216,9 +216,9 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 7 */}
-        <div className="auto-info">
+        <div className="auto-info-odd">
           {/* left */}
-          <div className="w-6/12 ">
+          <div className="auto-info-content">
             <h1>Log Calls</h1>
             <p>
               EngageBay's real-time call logs help you keep track of your
@@ -235,7 +235,7 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 8 */}
-        <div className="auto-info">
+        <div className="auto-info-even">
           {/* left */}
           <div>
             <img
@@ -244,7 +244,7 @@ export const AutoDailer = () => {
             />
           </div>
           {/* right */}
-          <div className="w-6/12">
+          <div className="auto-info-content">
             <h1>Wrap-up Calls</h1>
             <p>
               Always stay focused on the call instead of taking notes. For
@@ -254,9 +254,9 @@ export const AutoDailer = () => {
           </div>
         </div>
         {/* 9 */}
-        <div className="auto-info">
+        <div className="auto-info-odd">
           {/* left */}
-          <div className="w-6/12 ">
+          <div className="auto-info-content">
             <h1>Call Reporting</h1>
             <p>
               Get regular email reports about the call activity of your team
@@ -296,7 +296,7 @@ export const AutoDailer = () => {
       </div>
       <div className="auto-accordion">
         {/* left */}
-        <div className="w-6/12">
+        <div className="auto-info-content">
           <Accordion allowToggle className="w-10/12 m-auto">
             <AccordionItem className="rounded-lg mb-4 bg-slate-50 border-solid border-2 p-2">
               <h2>
@@ -353,7 +353,7 @@ export const AutoDailer = () => {
           </Accordion>
         </div>
         {/* right */}
-        <div className="w-6/12">
+        <div className="auto-info-content">
           <Accordion allowToggle className=" w-10/12 m-auto">
             <AccordionItem className="rounded-lg mb-4 bg-slate-50 border-solid border-2 p-2">
               <h2>
@@ -409,11 +409,11 @@ export const AutoDailer = () => {
         {/* left */}
         <div className="auto-bottom-left">
           <div>
-            <h1 className="text-4xl font-normal ">
+            <h1>
               Unlimited users{" "}
               <span className="font-extrabold text-blue-900">free forever</span>
             </h1>
-            <p className="text-md font-normal mt-2">
+            <p>
               With awesome software backed by a dedicated support team, make
               every part of your marketing, sales & helpdesk more effective.
             </p>
@@ -458,31 +458,28 @@ export const AutoDailer = () => {
         </div>
         {/* right */}
         <div className="auto-bottom-right">
-          <h1 className="text-2xl text-center">Get Started</h1>
+          <h1>Get Started</h1>
           {/* form */}
           <div>
-            <form className="flex flex-col gap-4 m-auto ml-10 my-6">
+            <form>
               <input
                 placeholder="Name"
-                className="border-solid border-2 w-9/12 ml-5 rounded-sm p-2 m-auto h-10"
               />
               <input
                 placeholder="Email"
-                className="border-solid border-2 w-9/12 ml-5 rounded-sm p-2 m-auto h-10"
               />
               <input
                 placeholder="Password"
-                className="border-solid border-2 w-9/12 ml-5 rounded-sm p-2 m-auto h-10"
               />
               <input
                 type={"submit"}
                 value="SIGNUP FREE"
-                className="border-solid border-2 w-9/12 ml-5 rounded-sm p-2 m-auto h-10 bg-orange-600 text-white"
+                className="auto-bottom-right-submit"
               />
             </form>
           </div>
-          <div className="ml-16 m-auto">
-            <button>SCHEDULE A CALL</button>
+          <div>
+            <button >SCHEDULE A CALL</button>
           </div>
         </div>
       </div>
