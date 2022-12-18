@@ -18,12 +18,8 @@ import { FaCheckCircle } from "react-icons/fa";
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
     <Box
-      mb={4}
       shadow="base"
-      w="110%"
-      h="100vh"
       border="1px solid red"
-      alignSelf={{ base: "center", lg: "flex-start" }}
       borderColor={useColorModeValue("gray.200", "gray.500")}
       borderRadius={"xl"}
     >
@@ -92,50 +88,59 @@ const priceData = [
   },
 ];
 
+const breakpoints = {
+  sm: '30em',
+  md: '48em',
+  lg: '62em',
+  xl: '80em',
+  '2xl': '96em',
+}
+
 const ComparePrice = () => {
   return (
-    <Box>
+    <Box m="auto">
       <Box w="30%" m="auto">
-        <Heading textAlign="center">Compare Plans</Heading>
-        <Text textAlign="center">to help find the perfect fit</Text>
+        <Heading textAlign="center" size={{sm:"md", md:"lg", lg: "xl"}}>Compare Plans</Heading>
+        <Text size={{sm:"sm", md:"md", lg: "lg"}} textAlign="center">to help find the perfect fit</Text>
       </Box>
 
-      <Box py={12} id="Year" w="80%" m="auto">
+      <Box id="Year" w="95%" m="auto">
       <Stack
-        direction={{ base: "column", md: "row" }}
-        textAlign="center" w="25%" m="auto"
+        display="grid"
+        gridTemplateColumns={{
+          sm: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(4, 1fr)",
+        }} gap="6"
+        textAlign="center" m="auto"
         justify="center"
-        spacing={{ base: 4, lg: 10 }}
-        py={10}
       >
         {priceData.map((ele) =>
             <PriceWrapper>
-              <Box py={4} px={12} position="sticky" top="0px" background="white" zIndex="3" backgroundColor="lightblue">
+              <Box position="sticky" top="0px" background="white" zIndex="3" backgroundColor="lightblue">
                 <Text
                   fontWeight="500"
-                  fontSize="2xl"
+                  fontSize="2rem"
                   borderRadius="25px"
                 >
                   {ele.title}
                 </Text>
                 <HStack justifyContent="center">
-                  <Text fontSize="3xl" fontWeight="600">
+                  <Text fontSize="2rem" fontWeight="600">
                     $
                   </Text>
-                  <Text fontSize="3xl" fontWeight="600">
+                  <Text fontSize="2rem" fontWeight="600">
                     {ele.price}
                   </Text>
-                  <Text fontSize="3xl" color="gray.500">
+                  <Text fontSize="2rem" color="gray.500">
                     /month
                   </Text>
                 </HStack>
               </Box>
               <VStack
                 bg="white"
-                py={4}
-                borderBottomRadius={"xl"}
               >
-                <List spacing={3} textAlign="start" px={10}>
+                <List spacing={3} textAlign="start" px={{sm:"2", md:"2", lg: "2"}}>
                 <ListItem>
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   {ele.n1}

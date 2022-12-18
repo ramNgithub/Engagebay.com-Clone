@@ -18,8 +18,13 @@ import { FaCheckCircle } from "react-icons/fa";
 function PriceWrapper({ children }: { children: ReactNode }) {
   return (
     <Box
-      m="auto" w="100%"
-      border="1px solid black" mt="3%" overflow="unset" borderRadius="20px"
+      m="auto"
+      w="100%"
+      border="1px solid red"
+      borderColor={useColorModeValue("gray.200", "gray.500")}
+      borderRadius={"xl"}
+      mt="3%"
+      overflow="unset"
     >
       {children}
     </Box>
@@ -67,7 +72,7 @@ const priceData = [
     n8: "Call Records",
     n9: "Service Automation",
     n10: "Products",
-    n11: "Proposals"
+    n11: "Proposals",
   },
   {
     title: "PRO",
@@ -82,7 +87,7 @@ const priceData = [
     n8: "Custom Reporting",
     n9: "Account Manager",
     n10: "Uptime SLA",
-    n11: "Phone Support"
+    n11: "Phone Support",
   },
 ];
 
@@ -90,57 +95,104 @@ const Month = () => {
   return (
     <Box py={12} id="month" w="90%" m="auto" mt="3%">
       <Stack
-        textAlign="center" display="grid" 
-         gridTemplateColumns={{ sm: "repeat(1, 1fr)", md:"repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
-         gap="6"
+        textAlign="center"
+        display="grid"
+        gridTemplateColumns={{
+          sm: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(4, 1fr)",
+        }}
+        borderColor={useColorModeValue("gray.200", "gray.500")}
+        gap="6"
       >
         {priceData.map((ele) => (
-          <PriceWrapper w="100">
-            <Box py={4}>
+          <PriceWrapper>
+            <Box py={4} background="lightblue">
               <Text
                 fontWeight="500"
-                fontSize="1rem"
-                background="lightblue"
-                borderRadius="35px"
+                fontSize="2rem"
+                borderRadius="35px" w="auto" m="auto"
               >
                 {ele.title}
               </Text>
               <HStack justifyContent="center">
-                <Text fontSize="1rem" fontWeight="600">
+                <Text fontSize="1.5rem" fontWeight="600">
                   $
                 </Text>
-                <Text fontSize="1rem" fontWeight="600">
+                <Text fontSize="1.5rem" fontWeight="600">
                   {ele.price}
                 </Text>
-                <Text fontSize="1rem" color="gray.500">
+                <Text fontSize="1.5rem" color="gray.500">
                   /month
                 </Text>
               </HStack>
             </Box>
             <VStack bg="white" py={4} borderBottomRadius={"xl"}>
-              <List spacing={3} textAlign="start" px={10} w="100%">
-                <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+              <List spacing={3} textAlign="start" px={{sm:"2", md:"2", lg: "2"}}>
+                <ListItem
+                  w="100%"
+                  display={{
+                    sm: "fontSizw=0.5rem",
+                    md: "fontSize=0.7rem",
+                    lg: "fontSize=1rem",
+                  }}
+                >
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   {ele.n1}
                 </ListItem>
-                <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                <ListItem
+                  w="100%"
+                  display={{
+                    sm: "fontSizw=0.5rem",
+                    md: "fontSize=0.7rem",
+                    lg: "fontSize=1rem",
+                  }}
+                >
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   {ele.n2}
                 </ListItem>
-                <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                <ListItem
+                  w="100%"
+                  display={{
+                    sm: "fontSizw=0.5rem",
+                    md: "fontSize=0.7rem",
+                    lg: "fontSize=1rem",
+                  }}
+                >
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   {ele.n3}
                 </ListItem>
-                <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}> 
+                <ListItem
+                  w="100%"
+                  display={{
+                    sm: "fontSizw=0.5rem",
+                    md: "fontSize=0.7rem",
+                    lg: "fontSize=1rem",
+                  }}
+                >
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   {ele.n4 || ""}
                 </ListItem>
-                <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                <ListItem
+                  w="100%"
+                  display={{
+                    sm: "fontSizw=0.5rem",
+                    md: "fontSize=0.7rem",
+                    lg: "fontSize=1rem",
+                  }}
+                >
                   <ListIcon as={FaCheckCircle} color="green.500" />
                   {ele.n5 || ""}
                 </ListItem>
                 {ele.n6 !== undefined ? (
-                  <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                  <ListItem
+                    w="100%"
+                    display={{
+                      sm: "fontSizw=0.5rem",
+                      md: "fontSize=0.7rem",
+                      lg: "fontSize=1rem",
+                    }}
+                  >
                     <ListIcon as={FaCheckCircle} color="green.500" />
                     {ele.n6}
                   </ListItem>
@@ -148,7 +200,14 @@ const Month = () => {
                   <ListItem>{ele.n6 || " "}</ListItem>
                 )}
                 {ele.n7 !== undefined ? (
-                  <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                  <ListItem
+                    w="100%"
+                    display={{
+                      sm: "fontSizw=0.5rem",
+                      md: "fontSize=0.7rem",
+                      lg: "fontSize=1rem",
+                    }}
+                  >
                     <ListIcon as={FaCheckCircle} color="green.500" />
                     {ele.n7 || " "}
                   </ListItem>
@@ -156,7 +215,14 @@ const Month = () => {
                   <ListItem visibility="hidden">{"HIII"}</ListItem>
                 )}
                 {ele.n8 !== undefined ? (
-                  <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                  <ListItem
+                    w="100%"
+                    display={{
+                      sm: "fontSizw=0.5rem",
+                      md: "fontSize=0.7rem",
+                      lg: "fontSize=1rem",
+                    }}
+                  >
                     <ListIcon as={FaCheckCircle} color="green.500" />
                     {ele.n8 || ""}
                   </ListItem>
@@ -164,7 +230,14 @@ const Month = () => {
                   <ListItem visibility="hidden">{"HIII"}</ListItem>
                 )}
                 {ele.n9 !== undefined ? (
-                  <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                  <ListItem
+                    w="100%"
+                    display={{
+                      sm: "fontSizw=0.5rem",
+                      md: "fontSize=0.7rem",
+                      lg: "fontSize=1rem",
+                    }}
+                  >
                     <ListIcon as={FaCheckCircle} color="green.500" />
                     {ele.n9 || ""}
                   </ListItem>
@@ -172,7 +245,14 @@ const Month = () => {
                   <ListItem visibility="hidden">{"HIII"}</ListItem>
                 )}
                 {ele.n10 !== undefined ? (
-                  <ListItem w="100%" border="1px solid red" display={{sm:"fontSizw=0.5rem", md:"fontSize=0.7rem", lg:"fontSize=1rem"}}>
+                  <ListItem
+                    w="100%"
+                    display={{
+                      sm: "fontSizw=0.5rem",
+                      md: "fontSize=0.7rem",
+                      lg: "fontSize=1rem",
+                    }}
+                  >
                     <ListIcon as={FaCheckCircle} color="green.500" />
                     {ele.n10 || ""}
                   </ListItem>
@@ -180,7 +260,7 @@ const Month = () => {
                   <ListItem visibility="hidden">{"HIII"}</ListItem>
                 )}
                 {ele.n11 !== undefined ? (
-                  <ListItem w="100%" border="1px solid red" fontSize="1rem">
+                  <ListItem w="100%" fontSize="1rem">
                     <ListIcon as={FaCheckCircle} color="green.500" />
                     {ele.n11 || ""}
                   </ListItem>
