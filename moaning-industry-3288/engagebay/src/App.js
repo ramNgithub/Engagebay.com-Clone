@@ -17,9 +17,9 @@ const App = () => {
     <div className="App">
       
       <Home/>
-      <Om/>
+      {/* <Om/>
       <Resource/>
-      <AutoDailer/>
+      <AutoDailer/> */}
    </div>
 
   );

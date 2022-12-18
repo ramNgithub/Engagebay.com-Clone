@@ -191,7 +191,7 @@ const MiddleCenter = () => {
                     </p>
                 </div>
                 <div data-aos="fade-up">
-                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/web-analytics.svg" alt="Not-Found"/>
+                    <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/site-messaging.svg" alt="Not-Found"/>
                     <p>
                         <b>Web Analytics</b>
                     </p>

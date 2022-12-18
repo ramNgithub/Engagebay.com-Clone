@@ -93,10 +93,56 @@
 
 @media (min-width:0px) and (max-width:560px){
     .TopHeading>h1{
-        font-size: 50px;
+        font-size: 35px;
         margin-bottom: 30px;
-        width:500px;
+        width:450px;
+        margin-left: -95px;
         /* margin-left:90px; */
+    }
+    /* .Head{
+        width:468px;
+        margin-right: 100px;
+    } */
+    .TopInputNButton>input::placeholder{
+        font-size: 15px;
+        
+    }
+    .TopHeading>p{
+        font-size: 20px;
+        width: 320px;
+        margin-left: -30px;
+    }
+    .TopInputNButton>button{
+        padding: 10px 20px;
+        border-radius: 50px;
+        border-color: orangered;
+        background-color: rgb(255, 131, 86);
+        color: white;
+        font-size: 13px;
+        margin-left: -10px;
+        margin-top: -20px;
+        /* margin-right: -80px; */
+        cursor: pointer;
+    }
+        .TopInputNButton>input{
+        padding: 13px 0px 13px 15px;
+        border-color: rgb(255, 72, 0);
+        margin-left: -40px;
+        border-radius: 50px;
+        width:330px;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+   
+    .Head{
+        width: 468px;
+    }
+    .rightIcon{
+        width: 500px;
+        margin-left: -60px;
     }
 }
 
