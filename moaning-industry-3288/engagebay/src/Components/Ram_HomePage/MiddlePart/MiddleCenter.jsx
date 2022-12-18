@@ -170,6 +170,7 @@ const MiddleCenter = () => {
                     <img src="https://cdn5.engagebay.com/new/assets/img/icons/eb-features/sticky-bars.svg" alt="Not-Found"/>
                     <p>
                         <b>Sticky Bars</b>
+                        
                     </p>
                 </div>
                 <div data-aos="fade-up">
