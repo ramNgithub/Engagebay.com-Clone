@@ -13,10 +13,9 @@ const Om = () => {
         {/* <BrowserRouter> */}
         <ChakraProvider>
           <Month/>
-         {/* <AllRoutes/>  */}
+         <AllRoutes/> 
           <ComparePrice/>
           <GirlData/>
-
         </ChakraProvider>
       {/* </BrowserRouter> */}
     </div>
