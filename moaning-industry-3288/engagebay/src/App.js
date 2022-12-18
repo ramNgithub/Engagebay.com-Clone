@@ -1,7 +1,6 @@
 
 import Resource from "./Components/Resource.jsx";
-// import Plan from "./Components/Pricing/Plans/Month";
-//import { BrowserRouter } from "react-router-dom";
+
 import { AutoDailer } from "./Components/AutoDailer";
 import React from "react";
 import Om from "./Components/Pricing/Om";
@@ -16,10 +15,14 @@ const App = () => {
       
       <Home/>
 
+   
+
+
       <Om/>
       <Resource/> 
       <AutoDailer/>
       <Blog/>
+
    </div>
 
   );

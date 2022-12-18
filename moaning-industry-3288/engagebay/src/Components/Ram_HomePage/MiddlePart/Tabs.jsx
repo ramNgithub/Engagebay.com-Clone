@@ -39,9 +39,9 @@ function Tabs() {
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
           <div data-aos="fade-right"  style={{color:"gray"}}>
-             <h1 style={{fontWeight:"bold",fontSize:"35px",color:"black"}}>Market Your Business Like the <br/> World's Best Companies</h1>
+             <h1 style={{fontWeight:"bold",fontSize:"35px",color:"black"}}>Market Your Business <br/> World's Best Companies</h1>
              <hr style={{border:"2px solid ",color:" rgb(105, 43, 204)",borderRadius:"5px",marginTop:"20px",marginBottom:"20px"}}/>
-             <p>With our comprehensive set of Marketing tools, including Email<br/> Marketing, Marketing Automation, Email Template Builder, Landing Page <br/>  Builder, Lead Generation tools, Social Suite & more, your marketing team <br/> can take things to the next level.</p>
+             <p style={{marginBottom:"20px"}}>With our comprehensive set of Marketing tools, including<br/> Marketing, Marketing Automation, Email Template Builder, Landing Page <br/>  Builder, Lead Generation tools, Social Suite & more, your marketing team <br/> can take things to the next level.</p>
              <div style={{marginTop:"-400px"}}>
                     <br/>
                     <b style={{color:"black"}}>POPULAR FEATURES</b><br/>
