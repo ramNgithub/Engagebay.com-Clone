@@ -50,20 +50,20 @@ const PricePlans = () => {
         background="white"
         m="auto"
         borderRadius="20px"
-        w={{ sm: "40%", md: "60%", lg: "80%" }}
-        h={{  base:"50vh", sm: "50vh", md: "35vh", lg: "15vh" }}
+        w={{ sm: "30%", md: "50%", lg: "80%" }}
+        h={{ sm: "40vh", md: "30vh", lg: "15vh" }}
       >
         <Tabs
           variant="soft-rounded"
           colorScheme="blue"
           fontSize={{sm: "1rem", md: "1.5rem", lg: "2rem" }}
           w="100%"
-          h={{  base:"50vh", sm: "50vh", md: "35vh", lg: "15vh" }}
+          h={{ sm: "40vh", md: "30vh", lg: "15vh" }}
           m="auto"
         >
           <TabList
             display="grid"
-            h={{  base:"50vh", sm: "50vh", md: "35vh", lg: "15vh" }}
+            h={{ base:"40vh", sm: "40vh", md: "30vh", lg: "15vh" }}
             m="auto"
             gridTemplateColumns={{
               sm: "repeat(1, 1fr)",
@@ -73,7 +73,7 @@ const PricePlans = () => {
           >
             {pair4.map((ele) => (
               <Box
-                w={{ sm: "60%", md: "80%", lg: "100%" }}
+                w={{ sm: "90%", md: "90%", lg: "100%" }}
                 key={ele.title} m="auto"
               >
                 <NavLink to={`${ele.Route}`}>
@@ -90,12 +90,12 @@ const PricePlans = () => {
                       {/* {ele.Route  : ()=>{setService(false)} } */}
                       <Heading
                         as="h4"
-                        fontSize={{ sm: "1rem", md: "1rem", lg: "1.3rem" }}
+                        fontSize={{ sm: "10px", md: "1rem", lg: "1.3rem" }}
                       >
                         {ele.title}
                       </Heading>
                       <Text
-                        fontSize={{ sm: "0.5rem", md: "0.8rem", lg: "1rem" }}
+                        fontSize={{ sm: "10px", md: "0.8rem", lg: "1rem" }}
                       >
                         {ele.desc}
                       </Text>
@@ -119,7 +119,7 @@ const PricePlans = () => {
           w="40%"
           m="auto"
           borderRadius="25px"
-          mt="5.7%"
+          mt={{ sm: "3%", md: "5%", lg: "7.7%" }}
           h="6.2vh"
         >
           <Tabs variant="soft-rounded" colorScheme="green" color="red" w="100%">

@@ -11,18 +11,19 @@ import Blog from './Components/Blog.jsx';
 const App = () => {
   return (
     <div className="App">
-
-      
-      <Home/>
-
-   
-
-
+      {/* <Head/> */}
+      {/* <MiddleUper/> */}
+      {/* <MiddleCenter/>
+      <Footer/> */}
       <Om/>
+      {/* <Resource/> 
+      <AutoDailer/>
+      <Blog/> */}
+
+      <Home/>
       <Resource/> 
       <AutoDailer/>
       <Blog/>
-
    </div>
 
   );
