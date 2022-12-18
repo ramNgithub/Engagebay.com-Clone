@@ -5,7 +5,7 @@ const ServiceBay = () => {
   return (
     <Box w="60%" m="auto" mt="3%" mb="5%">
       <Box m="auto" w="50%" textAlign="center" lineHeight="55px">
-        <Heading as="h1" size="lg">
+        <Heading as="h1" size="lg">  
           Service Bay
         </Heading>
         <Text>Free Help Desk & Free Live Chat for support teams</Text>
