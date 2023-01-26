@@ -3,8 +3,10 @@
  import Aos from "aos"
  import "aos/dist/aos.css"
  import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
  const MiddleUper = () => {
+    const navigate=useNavigate();
      useEffect(()=>{
          Aos.init({duration:1000})
      },[])
@@ -54,7 +56,7 @@
                             </div>
                         </div>
                       </div>
-                    <button style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
+                    <button onClick={()=>navigate("/signup")} style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
                 </div>
 
                 
@@ -101,7 +103,7 @@
                             </div>
                         </div>
                       </div>
-                    <button style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
+                    <button onClick={()=>navigate("/signup")} style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
                 </div>
 
                 
@@ -150,7 +152,7 @@
                             </div>
                         </div>
                       </div>
-                    <button style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
+                    <button onClick={()=>navigate("/signup")} style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
                 </div>
 
                 
@@ -197,7 +199,7 @@
                             </div>
                         </div>
                       </div>
-                    <button style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
+                    <button onClick={()=>navigate("/signup")} style={{marginTop:"30px",padding:"15px 45px",borderRadius:"5px",color:"white",backgroundColor:" rgb(105, 43, 204)",border:"none"}}>Get Started</button>
                 </div>
 
              </div>

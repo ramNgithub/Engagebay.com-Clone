@@ -3,24 +3,25 @@ import React from 'react'
 import "./MiddleCenter.css"
 import MarqueeAtuo from './MiddleLower/MarqueeAtuo';
 import Tabs from "./Tabs"
-import {Link} from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 
  const MiddleCenter = () => {
+    const navigate=useNavigate();
    return (
     <div>
          <div className='Happy_Customer_Reviews'>
              <h2>HAPPY CUSTOMERS SHARE GREATE REVIEWS ON G2</h2>
             <div className='Happy_Customer_Reviews_All_Img'>
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_AsiaPacific_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Europe_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_HighPerformer_Small-Business_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/CRM_MomentumLeader_Leader.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Mid-Market_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/EmailTracking_HighPerformer_Small-Business_HighPerformer.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/HelpDesk_EasiestAdmin_EaseOfAdmin.svg" alt="Not-Found" />
-                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://cdn5.engagebay.com/new/assets/img/Awards-2022/OnlineFormBuilder_FastestImplementation_Small-Business_GoLiveTime.svg" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
+                 <img data-aos="fade-up-right" style={{width:"100px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST9dKsdLQsBMZegtCcJ3rs5AxN0CICeyDvyGWUGVWL49_CBmdnQikCeYe0x0uLLCAt9bo&usqp=CAU" alt="Not-Found" />
              </div>
          </div>
          <div className='Do_It_All_With_EngageBay'>
@@ -217,12 +218,12 @@ import {Link} from "react-router-dom"
 
         <div className='All_In_One_CRM'>
              <div >
-                 <h2 style={{fontSize:"32px",fontFamily:"sans"}}>Simplify Marketing, Sales, & support with the best free</h2>
+                 <h2 style={{fontSize:"32px"}}>Simplify Marketing, Sales, & support with the best free</h2>
                  <h1 style={{color:"rgb(188, 0, 239)",fontSize:"30px",marginTop:"10px"}}>All-In-One-CRM software</h1>
              </div>
              <div  className='TopInputNButton'>
                 <input  placeholder='Your email address'/>
-                <button>Get Started</button>
+                <button onClick={()=>navigate("/signup")}>Get Started</button>
               </div>
               {/* <div style={{marginLeft:"600px"}} className='rightIcon'> 
                     <p><img style={{width:"18px",margintop:"10px",marginBottom:"-3px"}} src='https://icones.pro/wp-content/uploads/2021/02/icone-de-tique-ronde-violette.png' alt='Right Icon'/> Free for 15 users</p>

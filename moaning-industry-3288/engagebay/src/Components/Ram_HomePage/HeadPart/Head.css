@@ -25,7 +25,7 @@
 }
 .TopInputNButton>input{
     padding: 23px 0px 23px 15px;
-    border-color: rgb(255, 72, 0);
+    /* border-color: rgb(255, 72, 0); */
    
     border-radius: 50px;
     width:45%;
@@ -33,14 +33,17 @@
     margin-top: 25px;
     margin-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 .TopInputNButton>input::placeholder{
     font-size: 18px;
     
 }
 .TopInputNButton>input:focus{
-    border-color: rgb(255, 72, 0);
+    /* border-color: rgb(255, 72, 0); */
     box-shadow: 0 0 20px 0 orangered;
+    outline: none;
+    
 }
 .TopInputNButton>button{
     padding: 17px 37px;

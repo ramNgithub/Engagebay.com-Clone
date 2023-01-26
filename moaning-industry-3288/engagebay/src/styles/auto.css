@@ -162,6 +162,7 @@
 }
 .auto-bottom-right h1 {
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 .auto-bottom-right form {
   /* flex flex-col gap-4 m-auto ml-10 my-6 */
@@ -177,6 +178,7 @@
   padding: 5px;
   width: 75%;
   margin: auto;
+  margin-bottom: 20px;
   border: 1px solid;
   border-radius: 10px;
 }
@@ -192,6 +194,7 @@
   padding: 10px 5px;
   border-radius: 5px;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 .auto-bottom-right button:hover {
   background-color: #6a458e;

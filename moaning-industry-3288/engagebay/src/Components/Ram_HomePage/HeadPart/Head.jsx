@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./Head.css"
 
 const Head = () => {
+  const navigate=useNavigate();
   return (
     <div className='Head'>
       <div className='TopHeading' >
@@ -12,7 +14,7 @@ const Head = () => {
       </div>
           <div className='TopInputNButton'>
           <input  placeholder='Your email address'/>
-          <button>Get Started</button>
+          <button onClick={()=>navigate("/login")}>Get Started</button>
           </div>
       <div className='rightIcon'>
           <div className="rightIcon_ImgNp">

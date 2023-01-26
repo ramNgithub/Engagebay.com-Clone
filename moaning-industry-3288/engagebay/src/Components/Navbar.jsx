@@ -16,21 +16,21 @@ const Navbar = () => {
                     </Box>
                     <HStack border="0px solid red" justifyContent="space-evenly" w="70%">
                         <Menu>
-                            <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton bg="none" _hover={{ bg: "whitesmoke", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Products
                             </MenuButton>
                             <MenuList  >
-                                <MenuItem _hover={{ bg: "orange.200" }}><Link to="/dailer">Calling</Link></MenuItem>
+                            <Link to="/dialer">  <MenuItem _hover={{ bg: "orange.200" }}>Calling</MenuItem></Link>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Signature</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Tracker</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Email Validator</MenuItem>
                                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
                             </MenuList>
                         </Menu>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/price">Pricing</Link></Button>
+                        <Button fontSize="15px"  bg="none" _hover={{ "bg": "whitesmoke", "color": "#573098" }} ><Link to="/price">Pricing</Link></Button>
                         {/* <Menu> */}
                             {/* <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}> */}
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }} ><Link to="/resource">Resource</Link></Button> 
+                        <Button fontSize="15px"  bg="none" _hover={{ "bg": "whitesmoke", "color": "#573098" }} ><Link to="/resource">Resource</Link></Button> 
                             {/* </MenuButton> */}
                             {/* <MenuList  >
                                 <MenuItem _hover={{ bg: "orange.200" }}>UTM Builder</MenuItem>
@@ -41,7 +41,7 @@ const Navbar = () => {
                             </MenuList> */}
                         {/* </Menu>                        */}
                          <Menu>
-                            <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}>
+                            <MenuButton bg="none" _hover={{ bg: "whitesmoke", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}>
                                 Free Tools
                             </MenuButton>
                             <MenuList  >
@@ -52,13 +52,13 @@ const Navbar = () => {
                                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
                             </MenuList>
                         </Menu>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}>Blog</Button>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}
+                        <Button onClick={()=>navigate("/blog")} fontSize="15px"  _hover={{ "bg": "whitesmoke", "color": "#573098" }}>Blog</Button>
+                        <Button fontSize="15px"  _hover={{ "bg": "whitesmoke", "color": "#573098" }}
                             onClick={
                                 () => { navigate("login") }
                             }>Login</Button>
-                        <Button fontSize="15px" h="30px" w="90px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="#6639B3" borderRadius="2px" _hover={{ "bg": "#6639B3" }} color="white" >Free Demo</Button>
-                        <Button fontSize="15px" h="30px" w="90px" border="0px solid red" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="#FF885E" borderRadius="2px" _hover={{ "bg": "#FF885E" }} color="white"
+                        <Button padding="20px 20px 20px 20px" bg="#6639B3" fontSize="15px" h="30px" w="98px"  _hover={{ "bg": "#6639B3" }} color="white" >Free Demo</Button>
+                        <Button padding="20px 20px 20px 20px" bg="#FF885E" fontSize="15px" h="30px" w="98px" border="0px solid red"  _hover={{ "bg": "#FF885E" }} color="white"
                         > <Link to="/signup">Free SignUp</Link></Button>
                     </HStack>
                 </HStack>
