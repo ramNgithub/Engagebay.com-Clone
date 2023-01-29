@@ -25,7 +25,6 @@ Install with npm
 
 
 
-
 ## Authors
 - [@ramNgithub](https://www.github.com/octokatherine)
 - [@Omchand27](https://www.github.com/octokatherine)
