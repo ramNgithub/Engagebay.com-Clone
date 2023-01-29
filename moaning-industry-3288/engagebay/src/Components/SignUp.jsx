@@ -4,6 +4,7 @@ import { FcGoogle, FcPrivacy } from "react-icons/fc"
 import { useDispatch } from 'react-redux'
 import { GetData, PostData } from '../Redux/action'
 import { useToast } from '@chakra-ui/react'
+import {Link} from "react-router-dom"
 
 const SignUp = () => {
   let initsate = {
@@ -85,7 +86,7 @@ const SignUp = () => {
         <Center><Button size="lg" _hover={{ bg: "#2F6AD9" }} w="90%" bg="#2F6AD9" color="white" onClick={() => {
           handelAdd(formdata)
 
-        }} >Sign-Up</Button>
+        }} ><Link to="/login">Sign-Up</Link></Button>
         </Center>
         <Text textAlign="center">Or</Text>
         <Center><Button size="lg" _hover={{ bg: "gray.100" }} leftIcon={<FcGoogle />} w="90%" color="#2F6AD9" >SIGN UP WITH G SUITE</Button>

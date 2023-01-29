@@ -52,7 +52,7 @@ const Navbar = () => {
                                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
                             </MenuList>
                         </Menu>
-                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}>Blog</Button>
+                        <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}><Link to="/blog">Blog</Link> </Button>
                         <Button fontSize="15px" fontFamily="-apple-system, BlinkMacSystemFont, Poppins, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,Segoe UI Symbol" bg="none" _hover={{ "bg": "none", "color": "#573098" }}
                             onClick={
                                 () => { navigate("login") }

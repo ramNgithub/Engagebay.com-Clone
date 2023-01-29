@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "name": "JOJO",
+      "email": "ok@gmail.com",
+      "phone": "9137761655",
+      "website": "google",
+      "password": "ok@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "JOJO",
+      "email": "ok@gmail.com",
+      "phone": "9137761655",
+      "website": "google",
+      "password": "ok@gmail.com",
+      "id": 2
+    }
+  ]
+}

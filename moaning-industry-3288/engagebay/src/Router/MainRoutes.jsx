@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { AutoDailer } from "../Components/AutoDailer";
+import Blog from "../Components/Blog";
 import Login from "../Components/Login";
 import Om from "../Components/Pricing/Om";
 import Marketing from "../Components/Pricing/Pair4/Marketing";
@@ -21,6 +22,7 @@ const MainRoutes = () => {
       <Route path="/pricing" element={<Om />}></Route>
       <Route path="/resource" element={<Resource />}></Route>
       <Route path="/dailer" element={<AutoDailer />}></Route>
+      <Route path="/blog" element={<Blog/>}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/price" element={<Month/>} />
       <Route path="/year" element={<PriceYearly />} />
