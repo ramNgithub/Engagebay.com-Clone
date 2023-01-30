@@ -24,7 +24,6 @@ const PricePlans = () => {
   const [service, setService] = useState(false);
 
   return (
-    
     <Box w="100%" h="60vh" background="#335eea">
       <Box m="auto" w="90%" mb="3%" textAlign="center">
         <Heading
@@ -56,15 +55,15 @@ const PricePlans = () => {
       >
         <Tabs
           variant="soft-rounded"
-          colorScheme="blue"
-          fontSize={{sm: "1rem", md: "1.5rem", lg: "2rem" }}
+          colorScheme="red"
+          fontSize={{ sm: "1rem", md: "1.5rem", lg: "2rem" }}
           w="100%"
           h={{ sm: "40vh", md: "30vh", lg: "15vh" }}
           m="auto"
         >
-          <TabList
+          <TabList 
             display="grid"
-            h={{ base:"40vh", sm: "40vh", md: "30vh", lg: "15vh" }}
+            h={{ base: "40vh", sm: "40vh", md: "30vh", lg: "15vh" }}
             m="auto"
             gridTemplateColumns={{
               sm: "repeat(1, 1fr)",
@@ -75,10 +74,11 @@ const PricePlans = () => {
             {pair4.map((ele) => (
               <Box
                 w={{ sm: "90%", md: "90%", lg: "100%" }}
-                key={ele.title} m="auto"
+                key={ele.title}
+                m="auto"
               >
                 <Link to={`${ele.Route}`}>
-                  <Tab
+                  <Tab border="1px solid red"
                     m="auto"
                     w="100%"
                     onClick={() =>
@@ -95,9 +95,7 @@ const PricePlans = () => {
                       >
                         {ele.title}
                       </Heading>
-                      <Text
-                        fontSize={{ sm: "10px", md: "0.8rem", lg: "1rem" }}
-                      >
+                      <Text fontSize={{ sm: "10px", md: "0.8rem", lg: "1rem" }}>
                         {ele.desc}
                       </Text>
                     </VStack>
