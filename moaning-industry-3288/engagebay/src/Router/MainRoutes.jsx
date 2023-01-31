@@ -9,7 +9,6 @@ import Biennial from "../Components/Pricing/Plans/Biennial";
 import Month from "../Components/Pricing/Plans/Month";
 import PriceYearly from "../Components/Pricing/Plans/PriceYearly";
 import ServiceBay from "../Components/Pricing/Plans/ServiceBay";
-import PricePlans from "../Components/Pricing/PricePlans";
 import Home from "../Components/Ram_HomePage/Home";
 import Resource from "../Components/Resource";
 import SignUp from "../Components/SignUp";

@@ -11,20 +11,45 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const pair4 = [
-  { title: "All-in-One", desc: "Starts at $12.74 USD", Route: "/price" },
-  { title: "Marketing", desc: "Starts at $11.04 USD", Route: "/marketing" },
-  { title: "CRM & Sales Bay", desc: "Starts at $11.04 USD", Route: "/price" },
-  { title: "Service Bay", desc: "Free Help Desk", Route: "/service" },
+  {
+    title: "All-in-One",
+    desc: "Starts at $12.74 USD",
+    Route: "/price",
+    id: "all",
+  },
+  {
+    title: "Marketing",
+    desc: "Starts at $11.04 USD",
+    Route: "/marketing",
+    id: "mar",
+  },
+  {
+    title: "CRM & Sales Bay",
+    desc: "Starts at $11.04 USD",
+    Route: "/price",
+    id: "crm",
+  },
+  {
+    title: "Service Bay",
+    desc: "Free Help Desk",
+    Route: "/service",
+    id: "bay",
+  },
 ];
 
 const PricePlans = () => {
   const [service, setService] = useState(false);
 
+  const navigate = useNavigate();
+
+  const handleClick = (ele) => {
+    ele === "/service" ? setService(true) : setService(false);
+  };
+
   return (
-    
     <Box w="100%" h="60vh" background="#335eea">
       <Box m="auto" w="90%" mb="3%" textAlign="center">
         <Heading
@@ -57,14 +82,14 @@ const PricePlans = () => {
         <Tabs
           variant="soft-rounded"
           colorScheme="blue"
-          fontSize={{sm: "1rem", md: "1.5rem", lg: "2rem" }}
+          fontSize={{ sm: "1rem", md: "1.5rem", lg: "2rem" }}
           w="100%"
           h={{ sm: "40vh", md: "30vh", lg: "15vh" }}
           m="auto"
         >
           <TabList
             display="grid"
-            h={{ base:"40vh", sm: "40vh", md: "30vh", lg: "15vh" }}
+            h={{ base: "40vh", sm: "40vh", md: "30vh", lg: "15vh" }}
             m="auto"
             gridTemplateColumns={{
               sm: "repeat(1, 1fr)",
@@ -75,34 +100,31 @@ const PricePlans = () => {
             {pair4.map((ele) => (
               <Box
                 w={{ sm: "90%", md: "90%", lg: "100%" }}
-                key={ele.title} m="auto"
+                key={ele.title}
+                m="auto"
               >
-                <Link to={`${ele.Route}`}>
-                  <Tab
-                    m="auto"
-                    w="100%"
-                    onClick={() =>
-                      ele.Route === "/service"
-                        ? setService(true)
-                        : setService(false)
-                    }
-                  >
-                    <VStack>
-                      {/* {ele.Route  : ()=>{setService(false)} } */}
-                      <Heading
-                        as="h4"
-                        fontSize={{ sm: "10px", md: "1rem", lg: "1.3rem" }}
-                      >
-                        {ele.title}
-                      </Heading>
-                      <Text
-                        fontSize={{ sm: "10px", md: "0.8rem", lg: "1rem" }}
-                      >
-                        {ele.desc}
-                      </Text>
-                    </VStack>
-                  </Tab>
-                </Link>
+                {/* <Link to={`${ele.Route}`}> */}
+                <Tab
+                  id={`${ele.id}`}
+                  m="auto"
+                  w="100%"
+                  onClick={() => handleClick(ele)}
+                  // border="1px solid red"
+                >
+                  <VStack>
+                    {/* {ele.Route  : ()=>{setService(false)} } */}
+                    <Heading
+                      as="h4"
+                      fontSize={{ sm: "10px", md: "1rem", lg: "1.3rem" }}
+                    >
+                      {ele.title}
+                    </Heading>
+                    <Text fontSize={{ sm: "10px", md: "0.8rem", lg: "1rem" }}>
+                      {ele.desc}
+                    </Text>
+                  </VStack>
+                </Tab>
+                {/* </Link> */}
               </Box>
             ))}
           </TabList>
@@ -134,19 +156,19 @@ const PricePlans = () => {
               </Box>
 
               <Box m="auto" w="33%">
-                <Link to="/year" m="auto">
+                {/* <Link to="/year" m="auto"> */}
                   <Tab m="auto" color="white" w="100%">
                     Yearly (8% off)
                   </Tab>
-                </Link>
+                {/* </Link> */}
               </Box>
 
               <Box m="right" w="33%">
-                <Link to="/biennial" m="auto">
+                {/* <Link to="/biennial" m="auto"> */}
                   <Tab m="right" color="white" w="100%">
                     Biennial (15% off)
                   </Tab>
-                </Link>
+                {/* </Link> */}
               </Box>
             </TabList>
             {/* <TabPanels >
