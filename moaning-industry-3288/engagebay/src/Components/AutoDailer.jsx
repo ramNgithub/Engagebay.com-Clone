@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import { GiCheckMark } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 
 let data = [
   {
@@ -56,6 +57,7 @@ let data = [
 ];
 
 export const AutoDailer = () => {
+    const navigate=useNavigate();
   return (
     <div>
       <div>
@@ -70,7 +72,7 @@ export const AutoDailer = () => {
       </div>
       <div className="auto-signup">
         <input placeholder="Your email address" />
-        <button>FREE SIGNUP</button>
+        <button onClick={()=>navigate("/signup")}>FREE SIGNUP</button>
         <img
           src="https://cdn5.engagebay.com/img/try-it-out.svg"
           alt="tryout-svg"
@@ -461,7 +463,7 @@ export const AutoDailer = () => {
           <h1>Get Started</h1>
           {/* form */}
           <div>
-            <form>
+            
               <input
                 placeholder="Name"
               />
@@ -471,15 +473,16 @@ export const AutoDailer = () => {
               <input
                 placeholder="Password"
               />
-              <input
+              {/* <input
                 type={"submit"}
                 value="SIGNUP FREE"
                 className="auto-bottom-right-submit"
-              />
-            </form>
+              /> */}
+              
+              <button onClick={()=>alert("We will conntet to your team as soon as possible")} >SCHEDULE A CALL</button>
           </div>
           <div>
-            <button >SCHEDULE A CALL</button>
+          <button onClick={()=>navigate("/signup")}  className="auto-bottom-right-submit"> SIGNUP FREE</button>
           </div>
         </div>
       </div>

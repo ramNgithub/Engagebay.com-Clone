@@ -211,7 +211,7 @@ const ComparePrice = () => {
                 )}
               </List>
                 <Box w="80%" pt={7}>
-                  <Button w="full" colorScheme="red">
+                  <Button marginBottom="20px" w="full" colorScheme="red">
                     Start trial
                   </Button>
                 </Box>

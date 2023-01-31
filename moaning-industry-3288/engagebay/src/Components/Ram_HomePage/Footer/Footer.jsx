@@ -1,8 +1,15 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box ,Text} from '@chakra-ui/react';
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./Footer.css";
 
 const Footer = () => {
+  const navigate=useNavigate();
+
+  const handleSchedule=()=>{
+    alert("Our team will contact your company as soon as possible")
+  }
+
   return (
     <div className='Footer'>
         {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,224C384,203,480,117,576,117.3C672,117,768,203,864,197.3C960,192,1056,96,1152,80C1248,64,1344,128,1392,160L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> */}
@@ -25,8 +32,8 @@ const Footer = () => {
                 <input style={{marginLeft:"20px"}} className='Footer_input' placeholder='Password'/>
               </div>
             </div>
-            <button style={{padding:"12px 20px",fontWeight:"bold",color:"white",cursor:"pointer",backgroundColor:"rgb(255, 80, 0)",border:"none",borderRadius:"5px"}}>SIGNUP FOR FREE</button>
-            <button style={{padding:"12px 20px",fontWeight:"bold",marginLeft:"20px",cursor:"pointer",backgroundColor:"white",borderRadius:"5px"}}>SCHEDULE A CALL</button>
+            <button style={{padding:"12px 20px",fontWeight:"bold",color:"white",cursor:"pointer",backgroundColor:"rgb(255, 80, 0)",border:"none",borderRadius:"5px"}} onClick={()=>navigate("/signup")} >SIGNUP FOR FREE</button>
+            <button style={{padding:"12px 20px",fontWeight:"bold",marginLeft:"20px",cursor:"pointer",backgroundColor:"white",borderRadius:"5px"}} onClick={handleSchedule}>SCHEDULE A CALL</button>
           </div>
         </div>
 
@@ -43,11 +50,11 @@ const Footer = () => {
             <p>Email A/B Testing</p>
             <p> RSS-to-Email</p>
             {/* <button>Show More </button> */}
-            <Accordion allowToggle>
-            <AccordionItem>
+            <Accordion allowToggle >
+            <AccordionItem border="none">
               <h2>
-                <AccordionButton>
-                  <Box color="white" flex='0.8' textAlign='left'>
+                <AccordionButton >
+                  <Box  color="white" flex='0.8' textAlign='left'>
                     Show More
                   </Box>
                   <AccordionIcon style={{fontSize:"25px",color:"white"}} />
@@ -76,7 +83,7 @@ const Footer = () => {
             <p>Sendgrid Integration</p>
             {/* <button>Show More </button> */}
             <Accordion allowToggle>
-            <AccordionItem>
+            <AccordionItem border="none">
               <h2>
                 <AccordionButton>
                   <Box color="white" flex='0.8' textAlign='left'>
@@ -107,7 +114,7 @@ const Footer = () => {
             <p>Agile CRM Alternative</p>
             {/* <button>Show more</button> */}
             <Accordion allowToggle>
-            <AccordionItem>
+            <AccordionItem border="none">
               <h2>
                 <AccordionButton>
                   <Box color="white" flex='0.6' textAlign='left'>
@@ -138,7 +145,7 @@ const Footer = () => {
             <p>Developers</p>
             {/* <button>Show more</button> */}
             <Accordion allowToggle>
-            <AccordionItem>
+            <AccordionItem border="none">
               <h2>
                 <AccordionButton>
                   <Box color="white" flex='0.8' textAlign='left'>
@@ -169,7 +176,7 @@ const Footer = () => {
             <p>Glossary</p>
             {/* <button>Show more</button> */}
             <Accordion allowToggle>
-            <AccordionItem>
+            <AccordionItem border="none">
               <h2>
                 <AccordionButton>
                   <Box color="white" flex='0.5' textAlign='left'>

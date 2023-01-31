@@ -142,7 +142,7 @@ const Month = () => {
                 <ListItem
                   w="100%"
                   display={{
-                    sm: "fontSizw=0.5rem",
+                    sm: "fontSize=0.5rem",
                     md: "fontSize=0.7rem",
                     lg: "fontSize=1rem",
                   }}

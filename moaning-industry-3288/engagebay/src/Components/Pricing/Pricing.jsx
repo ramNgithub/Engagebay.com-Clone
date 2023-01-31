@@ -7,7 +7,7 @@ import ComparePrice from './Middle/ComparePrice';
 import GirlData from './Middle/GirlData';
 
 
-const Om = () => {
+const Pricing = () => {
   return (
     <div>
         {/* <BrowserRouter> */}
@@ -22,4 +22,4 @@ const Om = () => {
   )
 }
 
-export default Om
+export default Pricing

@@ -97,14 +97,18 @@
 .org::placeholder{
     color: white;
 }
+.org:hover{
+    cursor: pointer;
+}
 .last::placeholder{
  color: rgb(95, 7, 129);
 
 
 }
+
 .last:hover{
     background-color:rgb(95, 7, 129); 
-    
+    cursor: pointer;
 }
 .last:hover::placeholder{
     color: rgb(250, 245, 245);

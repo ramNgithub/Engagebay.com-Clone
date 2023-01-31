@@ -3,7 +3,8 @@ import Head from './HeadPart/Head'
 import MiddleUper from './MiddlePart/MiddleUper'
 import Carousele from './MiddlePart/MiddleLower/Carousel';
 import MiddleCenter from './MiddlePart/MiddleCenter';
-import Footer from "./Footer/Footer"
+// import Footer from "./Footer/Footer"
+import New_Footer from './New_Footer';
 const Home = () => {
   return (
     <div>
@@ -12,8 +13,8 @@ const Home = () => {
         <MiddleCenter/>
         <Carousele/>
        
-        
-        <Footer/>
+        <New_Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }

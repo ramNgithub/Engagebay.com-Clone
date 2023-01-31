@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import "../styles/Blog.css"
 import Footer from './Ram_HomePage/Footer/Footer'
 const Blog = () => {
+  const navigate=useNavigate();
   return (
     <>
     <div>
@@ -20,9 +22,9 @@ const Blog = () => {
           <input placeholder='Name'></input>
           <input placeholder='Email'></input>
           <input placeholder='Password'></input>
-          <input className='org' placeholder='SIGNUP FOR FREE'></input>
-          <input className='last' placeholder='SCHEDULE A CALL'></input>
-           
+          
+          <input onClick={()=>alert("We will connect to your team as soon as possible")} className='last' placeholder='SCHEDULE A CALL'></input>
+          <input onClick={()=>navigate("/signup")} className='org' placeholder='SIGNUP FOR FREE'></input>
       </form>
     </div>
   </div>
