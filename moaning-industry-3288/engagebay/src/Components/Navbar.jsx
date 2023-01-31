@@ -1,168 +1,3 @@
-// import {
-//   HStack,
-//   Box,
-//   Image,
-//   Stack,
-//   MenuButton,
-//   Button,
-//   MenuList,
-//   Menu,
-//   MenuItem,
-//   Text,
-//   Flex,
-// } from "@chakra-ui/react";
-// import React from "react";
-// import { ChevronDownIcon } from "@chakra-ui/icons";
-// import { Link, useNavigate } from "react-router-dom";
-// import { useState } from "react";
-
-// const Navbar = () => {
-//   const navigate = useNavigate();
-
-//   return (
-//     <>
-//       <Stack h={{ sm: "40px", md: "40px", lg: "80px" }} border="1px solid red">
-//         <HStack
-//           justifyContent="space-between"
-//           border="1px solid black"
-//           w={["85%", "85%", "82%"]}
-//           m="auto"
-//           h="100%"
-//         >
-//           <Box border="0px solid green" width={["10%", "25%", "13%"]}>
-//             <Link to="/">
-//               <Image src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg " />
-//             </Link>
-//           </Box>
-//           <HStack border="0px solid red" justifyContent="space-evenly" w="70%">
-//             <Menu>
-//               <MenuButton
-//                 bg="none"
-//                 _hover={{ bg: "whitesmoke", color: "#573098" }}
-//                 as={Button}
-//                 rightIcon={<ChevronDownIcon />}
-//               >
-//                 Products
-//               </MenuButton>
-//               <MenuList>
-//                 <Link to="/dialer">
-//                   <MenuItem _hover={{ bg: "orange.200" }}>Calling</MenuItem>
-//                 </Link>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>
-//                   Email Signature
-//                 </MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>Email Tracker</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>
-//                   Email Validator
-//                 </MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>
-//                   Attend a Workshop
-//                 </MenuItem>
-//               </MenuList>
-//             </Menu>
-//             <Button
-//               fontSize="15px"
-//               bg="none"
-//               _hover={{ bg: "whitesmoke", color: "#573098" }}
-//             >
-//               <Link to="/price">Pricing</Link>
-//             </Button>
-//             {/* <Menu> */}
-//             {/* <MenuButton bg="none" _hover={{ bg: "none", "color": "#573098" }} as={Button} rightIcon={<ChevronDownIcon />}> */}
-//             <Button
-//               fontSize="15px"
-//               bg="none"
-//               _hover={{ bg: "whitesmoke", color: "#573098" }}
-//             >
-//               <Link to="/resource">Resource</Link>
-//             </Button>
-//             {/* </MenuButton> */}
-//             {/* <MenuList  >
-//                 <MenuItem _hover={{ bg: "orange.200" }}>UTM Builder</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>Email Signature</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>Email Tracker</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>Email Validator</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>Attend a Workshop</MenuItem>
-//                 </MenuList> */}
-//             {/* </Menu> */}
-//             <Menu>
-//               <MenuButton
-//                 bg="none"
-//                 _hover={{ bg: "whitesmoke", color: "#573098" }}
-//                 as={Button}
-//                 rightIcon={<ChevronDownIcon />}
-//               >
-//                 Free Tools
-//               </MenuButton>
-//               <MenuList>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>UTM Builder</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>
-//                   Email Signature
-//                 </MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>Email Tracker</MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>
-//                   Email Validator
-//                 </MenuItem>
-//                 <MenuItem _hover={{ bg: "orange.200" }}>
-//                   Attend a Workshop
-//                 </MenuItem>
-//               </MenuList>
-//             </Menu>
-//             <Button
-//               onClick={() => navigate("/blog")}
-//               fontSize="15px"
-//               _hover={{ bg: "whitesmoke", color: "#573098" }}
-//             >
-//               Blog
-//             </Button>
-//             {auth === "" ? (
-//               <Flex gap="3">
-//                 <Button
-//                   fontSize="15px"
-//                   _hover={{ bg: "whitesmoke", color: "#573098" }}
-//                   onClick={() => {
-//                     navigate("login");
-//                   }}
-//                 >
-//                   Login
-//                 </Button>
-//                 <Button
-//                   padding="20px 20px 20px 20px"
-//                   bg="#6639B3"
-//                   fontSize="15px"
-//                   h="30px"
-//                   w="98px"
-//                   _hover={{ bg: "#6639B3" }}
-//                   color="white"
-//                 >
-//                   Free Demo
-//                 </Button>
-//                 <Button
-//                   padding="20px 20px 20px 20px"
-//                   bg="#FF885E"
-//                   fontSize="15px"
-//                   h="30px"
-//                   w="98px"
-//                   border="0px solid red"
-//                   _hover={{ bg: "#FF885E" }}
-//                   color="white"
-//                 >
-//                   <Link to="/signup">Free SignUp</Link>
-//                 </Button>
-//               </Flex>
-//             ) : (
-//               <Flex gap="3">
-//                 <Text fontWeight="bold">Ok@gmail.com</Text>
-//                 <Text fontWeight="bold">Logout</Text>
-//               </Flex>
-//             )}
-//           </HStack>
-//         </HStack>
-//       </Stack>
-//     </>
-//   );
-// };
- 
 import {
   Box,
   Flex,
@@ -187,12 +22,23 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const [auth, setAuth] = useState("");
+  const [email, setemail] = useState("");
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    const Email = localStorage.getItem("email");
+    if (token) {
+      setAuth(token);
+      setemail(Email);
+    }
+  }, []);
 
   return (
     <Box>
@@ -224,7 +70,7 @@ export default function Navbar() {
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <NavLink to="/">
             <Image
-              w={{sm:"100%", md:"60%", lg:"40%"}}
+              w={{ sm: "100%", md: "60%", lg: "40%" }}
               src="https://www.engagebay.com/new/assets/img/engagebay-logo.svg"
             />
           </NavLink>
@@ -274,8 +120,17 @@ export default function Navbar() {
           </Stack>
         ) : (
           <Flex gap="3">
-            <Text fontWeight="bold">Ok@gmail.com</Text>
-            <Text fontWeight="bold" cursor="pointer">Logout</Text>
+            <Text fontWeight="bold">{email}</Text>
+            <Text
+              fontWeight="bold"
+              cursor="pointer"
+              onClick={() => {
+                localStorage.removeItem("token");
+                window.location.reload();
+              }}
+            >
+              Logout
+            </Text>
           </Flex>
         )}
       </Flex>
@@ -374,6 +229,17 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 };
 
 const MobileNav = () => {
+  const [auth, setAuth] = useState("");
+  const [email, setemail] = useState("");
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    const Email = localStorage.getItem("email");
+    if (token) {
+      setAuth(token);
+      setemail(Email);
+    }
+  }, [auth, email]);
+
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}
@@ -383,6 +249,59 @@ const MobileNav = () => {
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
+
+      <Box>
+        {auth === "" ? (
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={4}
+          >
+            <NavLink to="/login">
+              <Button
+                fontSize={"md"}
+                fontWeight={600}
+                color={"white"}
+                bg={"pink.400"}
+                href={"#"}
+                _hover={{
+                  bg: "pink.300",
+                }}
+              >
+                Sign In
+              </Button>
+            </NavLink>
+            <NavLink to="/signup">
+              <Button
+                fontSize={"md"}
+                fontWeight={600}
+                color={"white"}
+                bg={"pink.400"}
+                href={"#"}
+                _hover={{
+                  bg: "pink.300",
+                }}
+              >
+                Sign Up
+              </Button>
+            </NavLink>
+          </Stack>
+        ) : (
+          <Flex gap="3">
+            <Text fontWeight="bold">{email}</Text>
+            <Text
+              fontWeight="bold"
+              cursor="pointer"
+              onClick={() => {
+                localStorage.removeItem("token");
+              }}
+            >
+              Logout
+            </Text>
+          </Flex>
+        )}
+      </Box>
     </Stack>
   );
 };

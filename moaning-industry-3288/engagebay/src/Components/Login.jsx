@@ -20,27 +20,22 @@ import {
 } from "@chakra-ui/react";
 import { FcGoogle, FcPrivacy } from "react-icons/fc";
 import { useDispatch, useSelector } from "react-redux";
-import { GetData } from "../Redux/action";
 import { useToast } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   let navigate = useNavigate();
   const toast = useToast();
-  useEffect(() => {
-    dispatch(GetData);
-  }, []);
+
   let initlogin = {
     email: "",
     password: "",
   };
+
   const [show, setShow] = React.useState(false);
   const [logindata, setlogindata] = useState(initlogin);
-  const handleClick = () => setShow(!show);
 
-  const dispatch = useDispatch();
-  const store = useSelector((store) => store.users);
-  console.log("store: ", store);
+  const handleClick = () => {};
 
   const change = (e) => {
     let { name, value } = e.target;
@@ -49,41 +44,41 @@ const Login = () => {
 
   const login = () => {
     if (logindata.email != "" && logindata.password != "") {
-      let s = store.filter((el) => {
-        return (
-          el.email === logindata.email && el.password === logindata.password
-        );
-      });
-      if (s.length != 0) {
-        toast({
-          title: "Login Successfully.",
-          description: "Your Logged In",
-          status: "success",
-          duration: 5000,
-          position: "top",
-          isClosable: true,
+      const data = { email: logindata.email, password: logindata.password };
+      fetch("https://dizzy-pig-dress.cyclic.app/users/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((res) => {
+          localStorage.setItem("token", res.token);
+          localStorage.setItem("email", res.email);
+          navigate("/");
+          toast({
+            title: "Login Success",
+            duration: 3000,
+            position: "top",
+            isClosable: true,
+          });
+          setTimeout(() => {
+            window.location.reload();
+          }, 2000);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
         });
-      } else {
-        toast({
-          title: "Email or Password Wrong",
-          description: "Something Went Wrong",
-          // status: 'failed',
-          duration: 9000,
-          position: "top",
-          isClosable: true,
-        });
-      }
     } else {
       toast({
         title: "Input Fields Are Emply",
         description: "Please Fill all Inputs",
-        // status: 'failed',
         duration: 9000,
         position: "top",
         isClosable: true,
       });
     }
-    setlogindata(initlogin);
   };
 
   return (
@@ -146,7 +141,6 @@ const Login = () => {
             color="white"
             onClick={() => {
               login();
-              navigate("/");
             }}
           >
             LOGIN
