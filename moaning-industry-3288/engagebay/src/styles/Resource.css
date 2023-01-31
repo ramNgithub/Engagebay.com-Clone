@@ -102,7 +102,7 @@
      
       
   }
-  /* @media all and (min-width: 600px) and (max-width: 900px){
+  @media screen and (max-width: 700px) {
       .eng{
           text-align: center;
           border: 4px solid red;
@@ -117,7 +117,7 @@
           border: 4px solid red;
           padding-bottom: 100px;
         }
-  } */
+  }
   @media only screen and (min-width:340px) and (max-width:480px){
       .eng{
           text-align: center;
