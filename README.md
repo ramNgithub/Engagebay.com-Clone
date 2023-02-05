@@ -71,5 +71,5 @@ Install with npm
 
 
 ## Demo
-https://joyful-centaur-a1a7e6.netlify.app/dailer
+https://super-dodol-72c293.netlify.app/dialer
 
